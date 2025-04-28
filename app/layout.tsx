@@ -2,18 +2,90 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Strong Hands, Soft Heart LLC',
+  title: {
+    default: 'Strong Hands, Soft Heart LLC',
+    template: '%s | Strong Hands, Soft Heart'
+  },
   description: 'Building enduring legacies through quiet strength and genuine care. Grounded in tradition, guided by compassion.',
-  generator: 'Next.js',
+  keywords: ['artisanal craftsmanship', 'traditional methods', 'sustainable practices', 'handcrafted goods', 'quality products', 'ethical business', 'heritage skills', 'community values'],
+  authors: [{ name: 'Strong Hands, Soft Heart LLC' }],
+  creator: 'Strong Hands, Soft Heart LLC',
+  publisher: 'Strong Hands, Soft Heart LLC',
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  metadataBase: new URL('https://stronghands-softheart.com'),
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://stronghands-softheart.com',
+    title: 'Strong Hands, Soft Heart LLC',
+    description: 'Building enduring legacies through quiet strength and genuine care. Grounded in tradition, guided by compassion.',
+    siteName: 'Strong Hands, Soft Heart LLC',
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Strong Hands, Soft Heart LLC - Traditional craftsmanship meets modern values',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Strong Hands, Soft Heart LLC',
+    description: 'Building enduring legacies through quiet strength and genuine care. Grounded in tradition, guided by compassion.',
+    images: ['/twitter-image.png'],
+    creator: '@stronghands_softheart',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  verification: {
+    google: 'your-google-site-verification',
+  },
   icons: {
     icon: [
-      { url: '/shsh-square-logo-blackbg-footer.avif', type: 'image/avif' },
-      { url: '/favicon.ico' }
+      { url: '/favicon.ico' },
+      { url: '/icon.png', type: 'image/png', sizes: '32x32' },
+      { url: '/icon-192.png', type: 'image/png', sizes: '192x192' },
+      { url: '/icon-512.png', type: 'image/png', sizes: '512x512' },
     ],
     apple: [
-      { url: '/shsh-square-logo-blackbg-footer.avif', type: 'image/avif' }
-    ]
-  }
+      { url: '/apple-icon.png', sizes: '180x180' },
+    ],
+    other: [
+      {
+        rel: 'mask-icon',
+        url: '/safari-pinned-tab.svg',
+        color: '#000000',
+      },
+    ],
+  },
+  manifest: '/manifest.json',
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: '#ffffff' },
+    { media: '(prefers-color-scheme: dark)', color: '#000000' },
+  ],
+  viewport: {
+    width: 'device-width',
+    initialScale: 1,
+    maximumScale: 1,
+  },
+  category: 'craftsmanship',
 }
 
 export default function RootLayout({
