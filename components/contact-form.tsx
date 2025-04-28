@@ -39,13 +39,13 @@ export function ContactForm() {
   }
 
   return (
-    <div className="w-full max-w-2xl mx-auto">
+    <div className="w-full max-w-lg mx-auto">
       {formState === "success" ? (
-        <div className="bg-stone-100 p-8 rounded-sm border border-stone-200 text-center">
+        <div className="bg-white p-6 rounded-lg border border-stone-300 text-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="48"
-            height="48"
+            width="40"
+            height="40"
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
@@ -57,8 +57,8 @@ export function ContactForm() {
             <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
             <polyline points="22 4 12 14.01 9 11.01" />
           </svg>
-          <h3 className="text-2xl font-bold mb-2">Message Received</h3>
-          <p className="text-stone-700 mb-6">Thank you for reaching out. I'll respond to your inquiry soon.</p>
+          <h3 className="text-xl font-bold mb-2 text-stone-800">Message Received</h3>
+          <p className="text-stone-600 mb-6">Thank you for reaching out. I'll respond to your inquiry soon.</p>
           <Button
             variant="outline"
             onClick={() => setFormState("idle")}
@@ -68,10 +68,12 @@ export function ContactForm() {
           </Button>
         </div>
       ) : (
-        <form onSubmit={handleSubmit} className="space-y-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <form onSubmit={handleSubmit} className="space-y-5">
+          <div className="space-y-5">
             <div className="space-y-2">
-              <Label htmlFor="name">Name</Label>
+              <Label htmlFor="name" className="text-stone-300">
+                Name
+              </Label>
               <Input
                 id="name"
                 name="name"
@@ -79,11 +81,13 @@ export function ContactForm() {
                 onChange={handleChange}
                 placeholder="Your name"
                 required
-                className="bg-stone-100 border-stone-300 focus:border-stone-500 focus:ring-stone-500"
+                className="bg-stone-600 border-stone-500 focus:border-stone-400 focus:ring-stone-400 text-white placeholder:text-stone-400"
               />
             </div>
             <div className="space-y-2">
-              <Label htmlFor="email">Email</Label>
+              <Label htmlFor="email" className="text-stone-300">
+                Email
+              </Label>
               <Input
                 id="email"
                 name="email"
@@ -92,12 +96,14 @@ export function ContactForm() {
                 onChange={handleChange}
                 placeholder="your.email@example.com"
                 required
-                className="bg-stone-100 border-stone-300 focus:border-stone-500 focus:ring-stone-500"
+                className="bg-stone-600 border-stone-500 focus:border-stone-400 focus:ring-stone-400 text-white placeholder:text-stone-400"
               />
             </div>
           </div>
           <div className="space-y-2">
-            <Label htmlFor="subject">Subject</Label>
+            <Label htmlFor="subject" className="text-stone-300">
+              Subject
+            </Label>
             <Input
               id="subject"
               name="subject"
@@ -105,26 +111,28 @@ export function ContactForm() {
               onChange={handleChange}
               placeholder="What is this regarding?"
               required
-              className="bg-stone-100 border-stone-300 focus:border-stone-500 focus:ring-stone-500"
+              className="bg-stone-600 border-stone-500 focus:border-stone-400 focus:ring-stone-400 text-white placeholder:text-stone-400"
             />
           </div>
           <div className="space-y-2">
-            <Label htmlFor="message">Message</Label>
+            <Label htmlFor="message" className="text-stone-300">
+              Message
+            </Label>
             <Textarea
               id="message"
               name="message"
               value={formData.message}
               onChange={handleChange}
               placeholder="Share your thoughts, questions, or proposals..."
-              rows={6}
+              rows={5}
               required
-              className="bg-stone-100 border-stone-300 focus:border-stone-500 focus:ring-stone-500"
+              className="bg-stone-600 border-stone-500 focus:border-stone-400 focus:ring-stone-400 text-white placeholder:text-stone-400"
             />
           </div>
           <Button
             type="submit"
             disabled={formState === "submitting"}
-            className="w-full bg-stone-800 hover:bg-stone-900 text-stone-50"
+            className="w-full bg-stone-200 hover:bg-white text-stone-800 font-medium py-2.5"
           >
             {formState === "submitting" ? "Sending..." : "Send Message"}
           </Button>
