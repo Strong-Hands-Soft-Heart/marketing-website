@@ -27,39 +27,22 @@ export function SvgLogo({ className, variant = "site" }: SvgLogoProps) {
           behavior: "smooth",
         })
       }}
-      className={cn("block cursor-pointer", className)}
+      className={cn(
+        "block cursor-pointer",
+        variant === "footer" ? "bg-transparent" : "bg-transparent",
+        className
+      )}
       aria-label="Scroll to top"
     >
       <svg
-        viewBox="0 0 100 100"
-        fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className="w-full h-full"
+        viewBox="0 0 100 100"
+        stroke={variant === "footer" ? "white" : "black"}
+        fill="none"
+        strokeWidth="5"
       >
-        {/* Earth symbol (triangle pointing down) */}
-        <path
-          d="M50 20L80 70H20L50 20Z"
-          className={getLineColor()}
-          strokeWidth="3"
-          fill="none"
-        />
-        {/* Air symbol (triangle pointing up) */}
-        <path
-          d="M50 80L20 30H80L50 80Z"
-          className={getLineColor()}
-          strokeWidth="3"
-          fill="none"
-          strokeDasharray="4 4"
-        />
-        {/* Circle in the center representing unity */}
-        <circle
-          cx="50"
-          cy="50"
-          r="15"
-          className={getLineColor()}
-          strokeWidth="2"
-          fill="none"
-        />
+        <polygon points="50,0 100,50 50,100 0,50" />
+        <line x1="0" y1="50" x2="100" y2="50" />
       </svg>
     </button>
   )
