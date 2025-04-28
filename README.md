@@ -4,10 +4,31 @@
 
 [![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/antoniwans-projects/v0-soft-hands-strong-hands-llc)
 [![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/TVPtmuEc48p)
+[![Version](https://img.shields.io/badge/Version-0.9.0-blue?style=for-the-badge)]()
 
 ## Overview
 
 This repository contains the website for Soft Hands, Strong Hands LLC.
+
+## Changelog
+
+### v0.9.0 (Current)
+- Initial public release
+- Implemented core website functionality
+- Added contact form with validation
+- Optimized for mobile and desktop viewing
+- Integrated with Vercel for deployment
+- Set up automated deployment pipeline
+- Implemented proper loading states and error handling
+- Optimized dependencies and removed unused packages
+- Enhanced layout and component architecture
+
+### Upcoming v1.0.0
+- Add missing share images
+- Final UI/UX polish
+- Performance optimizations
+- SEO improvements
+- Working contact form
 
 ## Technology Stack
 
