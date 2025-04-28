@@ -1,10 +1,11 @@
 import Image from "next/image"
 import Link from "next/link"
-import { AlchemicalLogo } from "@/components/alchemical-logo"
+import { SvgLogo } from "@/components/svg-logo"
 import { Beaker, Code, Headphones, BookOpen, Users, Handshake } from "lucide-react"
 import { ServiceCard } from "@/components/service-card"
 import { ContactForm } from "@/components/contact-form"
 import { MobileNav } from "@/components/mobile-nav"
+import { BackToTop } from "@/components/back-to-top"
 
 export default function Home() {
   return (
@@ -19,7 +20,7 @@ export default function Home() {
           {/* Desktop navigation */}
           <div className="hidden md:flex justify-between items-center">
             <div className="flex items-center gap-2.5">
-              <AlchemicalLogo className="h-8 w-8 text-stone-800" />
+              <SvgLogo className="h-8 w-8" variant="header" />
               <span className="text-base font-medium tracking-wide">SHSH</span>
             </div>
             <nav>
@@ -134,7 +135,7 @@ export default function Home() {
           </div>
           <div className="container mx-auto px-5 relative z-10">
             <div className="bg-white py-12 px-6 md:py-16 md:px-10 rounded-lg shadow-md max-w-3xl mx-auto">
-              <AlchemicalLogo className="h-12 w-12 md:h-16 md:w-16 mx-auto mb-6 md:mb-8 text-stone-800" />
+              <SvgLogo className="h-12 w-12 md:h-16 md:w-16 mx-auto mb-6 md:mb-8" variant="site" />
               <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6 text-center text-stone-800">Our Symbol</h2>
               <p className="text-base md:text-lg text-stone-600 max-w-2xl mx-auto leading-relaxed text-center">
                 The fusion of earth and air—strength and spirit—in our mark represents our fundamental belief: true
@@ -243,7 +244,7 @@ export default function Home() {
         <div className="container mx-auto px-5">
           <div className="flex flex-col items-center mb-8">
             <div className="flex items-center gap-2.5 mb-6">
-              <AlchemicalLogo className="h-8 w-8 text-stone-400" />
+              <SvgLogo className="h-8 w-8" variant="footer" />
               <span className="text-sm font-medium tracking-wide text-stone-300">STRONG HANDS, SOFT HEART LLC</span>
             </div>
             <div className="flex flex-wrap justify-center gap-x-8 gap-y-4 mb-6">
@@ -275,6 +276,7 @@ export default function Home() {
           </div>
         </div>
       </footer>
+      <BackToTop />
     </div>
   )
 }
