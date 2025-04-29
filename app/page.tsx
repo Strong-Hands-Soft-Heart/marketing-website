@@ -9,6 +9,7 @@ import { BackToTop } from '@/components/back-to-top';
 import { Hero } from '@/components/hero';
 import { Philosophy } from '@/components/philosophy';
 import { Symbol } from '@/components/symbol';
+import { navigationItems } from '@/config/navigation';
 
 export default function Home() {
   return (
@@ -28,30 +29,16 @@ export default function Home() {
             </div>
             <nav>
               <ul className="flex gap-8">
-                <li>
-                  <Link
-                    href="#philosophy"
-                    className="text-sm uppercase tracking-wider hover:text-stone-600 transition-colors py-2.5 px-1"
-                  >
-                    Philosophy
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#services"
-                    className="text-sm uppercase tracking-wider hover:text-stone-600 transition-colors py-2.5 px-1"
-                  >
-                    Services
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#contact-form"
-                    className="text-sm uppercase tracking-wider hover:text-stone-600 transition-colors py-2.5 px-1"
-                  >
-                    Contact
-                  </Link>
-                </li>
+                {navigationItems.map((item) => (
+                  <li key={item.href}>
+                    <Link
+                      href={item.href}
+                      className="text-sm uppercase tracking-wider hover:text-stone-600 transition-colors py-2.5 px-1"
+                    >
+                      {item.label}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </nav>
           </div>
