@@ -1,11 +1,12 @@
-import Image from "next/image"
-import Link from "next/link"
-import { SvgLogo } from "@/components/svg-logo"
-import { Beaker, Code, Headphones, BookOpen, Users, Handshake } from "lucide-react"
-import { ServiceCard } from "@/components/service-card"
-import { ContactForm } from "@/components/contact-form"
-import { MobileNav } from "@/components/mobile-nav"
-import { BackToTop } from "@/components/back-to-top"
+import Image from 'next/image';
+import Link from 'next/link';
+import { SvgLogo } from '@/components/svg-logo';
+import { Beaker, Code, Headphones, BookOpen, Users, Handshake } from 'lucide-react';
+import { ServiceCard } from '@/components/service-card';
+import { ContactForm } from '@/components/contact-form';
+import { MobileNav } from '@/components/mobile-nav';
+import { BackToTop } from '@/components/back-to-top';
+import { Hero } from '@/components/hero';
 
 export default function Home() {
   return (
@@ -56,37 +57,7 @@ export default function Home() {
       </header>
 
       <main className="flex-1">
-        <section className="hero relative min-h-[85vh] md:h-[80vh] flex items-center overflow-hidden py-16 md:py-24">
-          <div
-            className="absolute inset-0 z-0 bg-stone-100"
-            style={{
-              backgroundImage: `url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='none'><filter id='noise'><feTurbulence type='fractalNoise' baseFrequency='1.5' numOctaves='6' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23noise)'/></svg>")`,
-              backgroundBlendMode: "multiply",
-              opacity: 0.9,
-            }}
-          ></div>
-          <div className="container mx-auto px-5 z-10">
-            <div className="max-w-2xl">
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight text-stone-800">
-                Strong Hands,
-                <br />
-                Soft Heart
-              </h1>
-              <p className="text-lg sm:text-xl md:text-2xl text-stone-700 max-w-xl leading-relaxed">
-                Building enduring legacies through quiet strength and genuine care. Grounded in tradition, guided by
-                compassion.
-              </p>
-              <div className="mt-10">
-                <Link
-                  href="#philosophy"
-                  className="inline-block border-2 border-stone-800 px-6 py-3 text-stone-800 font-medium tracking-wide hover:bg-stone-800 hover:text-white transition-colors rounded-md"
-                >
-                  Our Philosophy
-                </Link>
-              </div>
-            </div>
-          </div>
-        </section>
+        <Hero />
 
         <section id="philosophy" className="py-16 md:py-24 bg-white relative">
           <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-stone-200 via-stone-400 to-stone-200"></div>
@@ -96,18 +67,20 @@ export default function Home() {
                 <span className="inline-block mb-2 text-xs uppercase tracking-wider text-stone-500 border-b border-stone-300 pb-1">
                   Our Philosophy
                 </span>
-                <h2 className="text-2xl md:text-3xl font-bold text-stone-800">The Craftsman's Ethos</h2>
+                <h2 className="text-2xl md:text-3xl font-bold text-stone-800">
+                  The Craftsman's Ethos
+                </h2>
                 <p className="text-base md:text-lg text-stone-600 leading-relaxed">
-                  Like the craftsman who shapes raw materials with calloused yet precise hands, we approach each
-                  endeavor with both strength and sensitivity.
+                  Like the craftsman who shapes raw materials with calloused yet precise hands, we
+                  approach each endeavor with both strength and sensitivity.
                 </p>
                 <p className="text-base md:text-lg text-stone-600 leading-relaxed">
-                  Our work is built to endure—like mountains that stand against time, like seeds that grow slowly but
-                  with purpose and direction.
+                  Our work is built to endure—like mountains that stand against time, like seeds
+                  that grow slowly but with purpose and direction.
                 </p>
                 <p className="text-base md:text-lg text-stone-600 leading-relaxed">
-                  We believe in the balance of earth and air—grounded in reality while aspiring toward something
-                  greater.
+                  We believe in the balance of earth and air—grounded in reality while aspiring
+                  toward something greater.
                 </p>
               </div>
               <div className="relative h-64 sm:h-80 md:h-96 mt-6 md:mt-0 rounded-lg overflow-hidden shadow-md">
@@ -128,18 +101,21 @@ export default function Home() {
               className="absolute top-0 left-0 w-full h-full"
               style={{
                 backgroundImage:
-                  "radial-gradient(circle at 20% 20%, rgba(0, 0, 0, 0.2) 0%, transparent 25%), radial-gradient(circle at 80% 80%, rgba(0, 0, 0, 0.2) 0%, transparent 25%)",
-                transform: "rotate(15deg) scale(2)",
+                  'radial-gradient(circle at 20% 20%, rgba(0, 0, 0, 0.2) 0%, transparent 25%), radial-gradient(circle at 80% 80%, rgba(0, 0, 0, 0.2) 0%, transparent 25%)',
+                transform: 'rotate(15deg) scale(2)',
               }}
             ></div>
           </div>
           <div className="container mx-auto px-5 relative z-10">
             <div className="bg-white py-12 px-6 md:py-16 md:px-10 rounded-lg shadow-md max-w-3xl mx-auto">
               <SvgLogo className="h-12 w-12 md:h-16 md:w-16 mx-auto mb-6 md:mb-8" variant="site" />
-              <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6 text-center text-stone-800">Our Symbol</h2>
+              <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6 text-center text-stone-800">
+                Our Symbol
+              </h2>
               <p className="text-base md:text-lg text-stone-600 max-w-2xl mx-auto leading-relaxed text-center">
-                The fusion of earth and air—strength and spirit—in our mark represents our fundamental belief: true
-                power comes from balance. The geometric simplicity speaks to our commitment to essentials over excess.
+                The fusion of earth and air—strength and spirit—in our mark represents our
+                fundamental belief: true power comes from balance. The geometric simplicity speaks
+                to our commitment to essentials over excess.
               </p>
             </div>
           </div>
@@ -152,7 +128,7 @@ export default function Home() {
               style={{
                 backgroundImage:
                   "url(\"data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fillRule='evenodd'%3E%3Cg fill='%23000000' fillOpacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E\")",
-                backgroundSize: "60px 60px",
+                backgroundSize: '60px 60px',
               }}
             ></div>
           </div>
@@ -187,8 +163,8 @@ export default function Home() {
                 description="Bespoke software solutions built with both technical excellence and human understanding. Robust architecture with intuitive interfaces."
                 icon={Code}
                 link={{
-                  url: "https://builds.software",
-                  text: "Visit builds.software",
+                  url: 'https://builds.software',
+                  text: 'Visit builds.software',
                 }}
               />
 
@@ -197,8 +173,8 @@ export default function Home() {
                 description="Guidance for young men navigating their path. Building character through wisdom shared, challenges faced, and potential realized."
                 icon={Users}
                 link={{
-                  url: "https://wizards777.medium.com/",
-                  text: "Read mentorship insights",
+                  url: 'https://wizards777.medium.com/',
+                  text: 'Read mentorship insights',
                 }}
               />
 
@@ -207,8 +183,8 @@ export default function Home() {
                 description="Non-profit resources that illuminate complex topics with clarity and purpose. Knowledge shared with both rigor and accessibility."
                 icon={BookOpen}
                 link={{
-                  url: "https://wizards777.medium.com/",
-                  text: "Explore articles",
+                  url: 'https://wizards777.medium.com/',
+                  text: 'Explore articles',
                 }}
               />
               <ServiceCard
@@ -216,8 +192,8 @@ export default function Home() {
                 description="Interested in investing in our ventures, seeking mentorship, product feedback, or web development expertise? I'm open to meaningful collaborations that align with our values."
                 icon={Handshake}
                 link={{
-                  url: "#contact-form",
-                  text: "Get in touch",
+                  url: '#contact-form',
+                  text: 'Get in touch',
                 }}
               />
             </div>
@@ -229,8 +205,8 @@ export default function Home() {
             <div className="max-w-3xl mx-auto text-center mb-10 md:mb-16">
               <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6">Begin Your Journey</h2>
               <p className="text-base md:text-lg text-stone-300 mb-4 md:mb-6 leading-relaxed">
-                Whether you're building a legacy, seeking guidance, or simply curious about our approach, we invite you
-                to connect with us.
+                Whether you're building a legacy, seeking guidance, or simply curious about our
+                approach, we invite you to connect with us.
               </p>
             </div>
             <div className="bg-stone-700 p-6 md:p-8 lg:p-10 rounded-lg shadow-lg">
@@ -245,16 +221,27 @@ export default function Home() {
           <div className="flex flex-col items-center mb-8">
             <div className="flex items-center gap-2.5 mb-6">
               <SvgLogo className="h-8 w-8" variant="footer" />
-              <span className="text-sm font-medium tracking-wide text-stone-300">STRONG HANDS, SOFT HEART LLC</span>
+              <span className="text-sm font-medium tracking-wide text-stone-300">
+                STRONG HANDS, SOFT HEART LLC
+              </span>
             </div>
             <div className="flex flex-wrap justify-center gap-x-8 gap-y-4 mb-6">
-              <Link href="#philosophy" className="text-sm hover:text-stone-300 transition-colors py-2">
+              <Link
+                href="#philosophy"
+                className="text-sm hover:text-stone-300 transition-colors py-2"
+              >
                 Philosophy
               </Link>
-              <Link href="#services" className="text-sm hover:text-stone-300 transition-colors py-2">
+              <Link
+                href="#services"
+                className="text-sm hover:text-stone-300 transition-colors py-2"
+              >
                 Services
               </Link>
-              <Link href="#contact-form" className="text-sm hover:text-stone-300 transition-colors py-2">
+              <Link
+                href="#contact-form"
+                className="text-sm hover:text-stone-300 transition-colors py-2"
+              >
                 Contact
               </Link>
             </div>
@@ -270,7 +257,10 @@ export default function Home() {
             <Link href="/privacy-policy" className="hover:text-stone-400 transition-colors py-2">
               Privacy Policy
             </Link>
-            <Link href="/product-disclaimers" className="hover:text-stone-400 transition-colors py-2">
+            <Link
+              href="/product-disclaimers"
+              className="hover:text-stone-400 transition-colors py-2"
+            >
               Product Disclaimers
             </Link>
           </div>
@@ -278,5 +268,5 @@ export default function Home() {
       </footer>
       <BackToTop />
     </div>
-  )
+  );
 }
