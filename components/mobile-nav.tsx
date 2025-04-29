@@ -1,37 +1,37 @@
-"use client"
+'use client';
 
-import { useState, useEffect } from "react"
-import Link from "next/link"
-import { SvgLogo } from "@/components/svg-logo"
-import { Menu, X } from "lucide-react"
-import { cn } from "@/lib/utils"
+import { useState, useEffect } from 'react';
+import Link from 'next/link';
+import { SvgLogo } from '@/components/svg-logo';
+import { Menu, X } from 'lucide-react';
+import { cn } from '@/lib/utils';
 
 export function MobileNav() {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
 
   // Close menu when route changes or on resize
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth > 768) {
-        setIsOpen(false)
+        setIsOpen(false);
       }
-    }
+    };
 
-    window.addEventListener("resize", handleResize)
-    return () => window.removeEventListener("resize", handleResize)
-  }, [])
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   // Prevent scrolling when menu is open
   useEffect(() => {
     if (isOpen) {
-      document.body.style.overflow = "hidden"
+      document.body.style.overflow = 'hidden';
     } else {
-      document.body.style.overflow = ""
+      document.body.style.overflow = '';
     }
     return () => {
-      document.body.style.overflow = ""
-    }
-  }, [isOpen])
+      document.body.style.overflow = '';
+    };
+  }, [isOpen]);
 
   return (
     <>
@@ -52,8 +52,8 @@ export function MobileNav() {
       {/* Mobile menu overlay with improved transitions */}
       <div
         className={cn(
-          "fixed inset-0 z-[100] bg-black/80 backdrop-blur flex flex-col transition-all duration-300 ease-in-out",
-          isOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none",
+          'fixed inset-0 z-[100] bg-black/80 backdrop-blur flex flex-col transition-all duration-300 ease-in-out',
+          isOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
         )}
       >
         <div className="container mx-auto px-5 py-6 flex justify-between items-center">
@@ -83,11 +83,11 @@ export function MobileNav() {
             </li>
             <li>
               <Link
-                href="/#services"
+                href="/#what-we-do"
                 className="text-2xl font-medium text-stone-100 hover:text-stone-300 transition-colors py-2.5 block"
                 onClick={() => setIsOpen(false)}
               >
-                Services
+                What We Do
               </Link>
             </li>
             <li>
@@ -103,9 +103,11 @@ export function MobileNav() {
         </nav>
 
         <div className="container mx-auto px-5 py-8 text-center">
-          <p className="text-stone-400 text-sm">© {new Date().getFullYear()} Strong Hands, Soft Heart LLC</p>
+          <p className="text-stone-400 text-sm">
+            © {new Date().getFullYear()} Strong Hands, Soft Heart LLC
+          </p>
         </div>
       </div>
     </>
-  )
+  );
 }

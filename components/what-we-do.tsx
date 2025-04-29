@@ -3,7 +3,7 @@ import { ServiceCard } from '@/components/service-card';
 
 export function WhatWeDo() {
   return (
-    <section id="services" className="py-16 md:py-24 bg-white relative">
+    <section id="what-we-do" className="py-16 md:py-24 bg-white relative">
       <div className="absolute top-0 left-0 w-full h-full opacity-5">
         <div
           className="h-full w-full"
@@ -21,16 +21,18 @@ export function WhatWeDo() {
           </span>
           <h2 className="text-2xl md:text-3xl font-bold mb-3 text-stone-800">Our Crafts</h2>
           <p className="text-base md:text-lg text-stone-600 max-w-2xl mx-auto">
-            Diverse expressions of the same philosophy: strength in execution, care in approach.
+            Diverse expressions. One philosophy.
+            <br />
+            Strength in execution. Care in approach.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           <ServiceCard
-            title="Artisanal Soap"
-            description="Organic, non-GMO handcrafted soaps made with intention and care. Each bar embodies our commitment to purity and craftsmanship."
+            title="Artisanal Skincare"
+            description="Organic, cold-process soaps — crafted by hand, rooted in tradition. Each bar is a quiet act of care and craft."
             icon={Beaker}
-            status="Launching 2026"
+            status="Formula in progress. Soft launch: Late 2025."
           />
 
           <ServiceCard

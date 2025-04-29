@@ -19,8 +19,11 @@ export function Footer() {
             >
               Philosophy
             </Link>
-            <Link href="#services" className="text-sm hover:text-stone-300 transition-colors py-2">
-              Services
+            <Link
+              href="#what-we-do"
+              className="text-sm hover:text-stone-300 transition-colors py-2"
+            >
+              What We Do
             </Link>
             <Link
               href="#contact-form"

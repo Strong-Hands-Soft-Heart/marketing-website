@@ -29,10 +29,10 @@ export function Header() {
               </li>
               <li>
                 <Link
-                  href="#services"
+                  href="#what-we-do"
                   className="text-sm uppercase tracking-wider hover:text-stone-600 transition-colors py-2.5 px-1"
                 >
-                  Services
+                  What We Do
                 </Link>
               </li>
               <li>
