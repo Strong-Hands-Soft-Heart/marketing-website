@@ -32,7 +32,7 @@ export function WhatWeDo() {
             title="Artisanal Skincare"
             description="Organic, cold-process soaps — crafted by hand, rooted in tradition. Each bar is a quiet act of care and craft."
             icon={Beaker}
-            status="Formula in progress. Soft launch: Late 2025."
+            status="Soft launch: Late 2025."
           />
 
           <ServiceCard
