@@ -1,9 +1,18 @@
+<<<<<<< HEAD
 import { Beaker, Headphones, Code, Users, BookOpen, Handshake } from 'lucide-react';
 import { ServiceCard } from './service-card';
 
 export function WhatWeDo() {
   return (
     <section id="services" className="py-16 md:py-24 bg-white relative">
+=======
+import { Beaker, Code, Headphones, BookOpen, Users, Handshake } from 'lucide-react';
+import { ServiceCard } from '@/components/service-card';
+
+export function WhatWeDo() {
+  return (
+    <section id="what-we-do" className="py-16 md:py-24 bg-white relative">
+>>>>>>> baded91f25202ae82ad91111721fdbdcbbe29405
       <div className="absolute top-0 left-0 w-full h-full opacity-5">
         <div
           className="h-full w-full"
@@ -14,6 +23,7 @@ export function WhatWeDo() {
           }}
         ></div>
       </div>
+<<<<<<< HEAD
 
       <div className="text-center mb-10 md:mb-16">
         <span className="inline-block mb-2 text-xs uppercase tracking-wider text-stone-500 border-b border-stone-300 pb-1">
@@ -79,6 +89,75 @@ export function WhatWeDo() {
             text: 'Get in touch',
           }}
         />
+=======
+      <div className="container mx-auto px-5 relative z-10">
+        <div className="text-center mb-10 md:mb-16">
+          <span className="inline-block mb-2 text-xs uppercase tracking-wider text-stone-500 border-b border-stone-300 pb-1">
+            What We Do
+          </span>
+          <h2 className="text-2xl md:text-3xl font-bold mb-3 text-stone-800">Our Crafts</h2>
+          <p className="text-base md:text-lg text-stone-600 max-w-2xl mx-auto">
+            Diverse expressions. One philosophy.
+            <br />
+            Strength in execution. Care in approach.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+          <ServiceCard
+            title="Artisanal Skincare"
+            description="Organic, cold-process soaps — crafted by hand, rooted in tradition. Each bar is a quiet act of care and craft."
+            icon={Beaker}
+            status="Soft launch: Late 2025"
+          />
+
+          <ServiceCard
+            title="Music Production Collaborations"
+            description="Heavy, emotional, sacred. Compositions forged in fire and friendship, balancing sonic force with emotional truth."
+            icon={Headphones}
+            status="Remote production in progress"
+          />
+
+          <ServiceCard
+            title="Custom Programming"
+            description="Software built with precision and principle. Combining technical excellence with intuitive design and ethical grounding."
+            icon={Code}
+            link={{
+              url: 'https://builds.software',
+              text: 'Visit builds.software',
+            }}
+          />
+
+          <ServiceCard
+            title="Mentorship"
+            description="For young men seeking purpose. Sacred, serious guidance rooted in accountability, strength, and compassion."
+            icon={Users}
+            link={{
+              url: 'https://wizards777.medium.com/',
+              text: 'Read about our mentorship model',
+            }}
+          />
+
+          <ServiceCard
+            title="Educational Content"
+            description="Real knowledge. Clear words. Non-profit, rigorously crafted content to illuminate complex ideas — with both depth and accessibility."
+            icon={BookOpen}
+            link={{
+              url: 'https://wizards777.medium.com/',
+              text: 'Explore articles',
+            }}
+          />
+          <ServiceCard
+            title="Collaboration & Investment"
+            description="Open to partners aligned in values and vision — mentorship, feedback, software builds, or purpose-led investment."
+            icon={Handshake}
+            link={{
+              url: '#contact-form',
+              text: 'Get in touch',
+            }}
+          />
+        </div>
+>>>>>>> baded91f25202ae82ad91111721fdbdcbbe29405
       </div>
     </section>
   );

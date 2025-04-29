@@ -1,13 +1,13 @@
-import type React from "react"
-import Link from "next/link"
-import { SvgLogo } from "@/components/svg-logo"
-import { ArrowLeft } from "lucide-react"
-import { MobileNav } from "@/components/mobile-nav"
+import type React from 'react';
+import Link from 'next/link';
+import { SvgLogo } from '@/components/svg-logo';
+import { ArrowLeft } from 'lucide-react';
+import { MobileNav } from '@/components/mobile-nav';
 
 interface LegalLayoutProps {
-  children: React.ReactNode
-  title: string
-  lastUpdated: string
+  children: React.ReactNode;
+  title: string;
+  lastUpdated: string;
 }
 
 export function LegalLayout({ children, title, lastUpdated }: LegalLayoutProps) {
@@ -40,10 +40,10 @@ export function LegalLayout({ children, title, lastUpdated }: LegalLayoutProps) 
                 </li>
                 <li>
                   <Link
-                    href="/#services"
+                    href="/#what-we-do"
                     className="text-sm uppercase tracking-wider hover:text-stone-600 transition-colors py-2.5 px-1"
                   >
-                    Services
+                    What We Do
                   </Link>
                 </li>
                 <li>
@@ -61,7 +61,10 @@ export function LegalLayout({ children, title, lastUpdated }: LegalLayoutProps) 
       </header>
 
       <main className="flex-1 container mx-auto px-5 py-10 md:py-16">
-        <Link href="/" className="inline-flex items-center text-stone-700 hover:text-stone-900 mb-6 md:mb-8">
+        <Link
+          href="/"
+          className="inline-flex items-center text-stone-700 hover:text-stone-900 mb-6 md:mb-8"
+        >
           <ArrowLeft className="h-4 w-4 mr-2" />
           <span>Back to Home</span>
         </Link>
@@ -79,16 +82,27 @@ export function LegalLayout({ children, title, lastUpdated }: LegalLayoutProps) 
           <div className="flex flex-col items-center mb-8">
             <div className="flex items-center gap-2.5 mb-6">
               <SvgLogo className="h-8 w-8 text-stone-400" variant="footer" />
-              <span className="text-sm font-medium tracking-wide text-stone-300">STRONG HANDS, SOFT HEART LLC</span>
+              <span className="text-sm font-medium tracking-wide text-stone-300">
+                STRONG HANDS, SOFT HEART LLC
+              </span>
             </div>
             <div className="flex flex-wrap justify-center gap-x-8 gap-y-4 mb-6">
-              <Link href="/#philosophy" className="text-sm hover:text-stone-300 transition-colors py-2">
+              <Link
+                href="/#philosophy"
+                className="text-sm hover:text-stone-300 transition-colors py-2"
+              >
                 Philosophy
               </Link>
-              <Link href="/#services" className="text-sm hover:text-stone-300 transition-colors py-2">
-                Services
+              <Link
+                href="/#what-we-do"
+                className="text-sm hover:text-stone-300 transition-colors py-2"
+              >
+                What We Do
               </Link>
-              <Link href="/#contact-form" className="text-sm hover:text-stone-300 transition-colors py-2">
+              <Link
+                href="/#contact-form"
+                className="text-sm hover:text-stone-300 transition-colors py-2"
+              >
                 Contact
               </Link>
             </div>
@@ -104,12 +118,15 @@ export function LegalLayout({ children, title, lastUpdated }: LegalLayoutProps) 
             <Link href="/privacy-policy" className="hover:text-stone-400 transition-colors py-2">
               Privacy Policy
             </Link>
-            <Link href="/product-disclaimers" className="hover:text-stone-400 transition-colors py-2">
+            <Link
+              href="/product-disclaimers"
+              className="hover:text-stone-400 transition-colors py-2"
+            >
               Product Disclaimers
             </Link>
           </div>
         </div>
       </footer>
     </div>
-  )
+  );
 }
