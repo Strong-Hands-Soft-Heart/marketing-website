@@ -64,7 +64,7 @@ export function WhatWeDo() {
 
           <ServiceCard
             title="Educational Content"
-            description="Non-profit resources that illuminate complex topics with clarity and purpose. Knowledge shared with both rigor and accessibility."
+            description="Real knowledge. Clear words. Non-profit, rigorously crafted content to illuminate complex ideas — with both depth and accessibility."
             icon={BookOpen}
             link={{
               url: 'https://wizards777.medium.com/',
