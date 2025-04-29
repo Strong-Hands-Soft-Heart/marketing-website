@@ -9,55 +9,13 @@ import { BackToTop } from '@/components/back-to-top';
 import { Hero } from '@/components/hero';
 import { Philosophy } from '@/components/philosophy';
 import { Symbol } from '@/components/symbol';
+import { Header } from '@/components/header';
+import { Footer } from '@/components/footer';
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-stone-50 text-stone-900 flex flex-col">
-      <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-sm border-b border-stone-200 shadow-sm">
-        <div className="container mx-auto py-3 px-5">
-          {/* Mobile navigation */}
-          <div className="md:hidden">
-            <MobileNav />
-          </div>
-
-          {/* Desktop navigation */}
-          <div className="hidden md:flex justify-between items-center">
-            <div className="flex items-center gap-2.5">
-              <SvgLogo className="h-8 w-8" variant="header" />
-              <span className="text-base font-medium tracking-wide">SHSH</span>
-            </div>
-            <nav>
-              <ul className="flex gap-8">
-                <li>
-                  <Link
-                    href="#philosophy"
-                    className="text-sm uppercase tracking-wider hover:text-stone-600 transition-colors py-2.5 px-1"
-                  >
-                    Philosophy
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#services"
-                    className="text-sm uppercase tracking-wider hover:text-stone-600 transition-colors py-2.5 px-1"
-                  >
-                    Services
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#contact-form"
-                    className="text-sm uppercase tracking-wider hover:text-stone-600 transition-colors py-2.5 px-1"
-                  >
-                    Contact
-                  </Link>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </header>
-
+      <Header />
       <main className="flex-1">
         <Hero />
         <Philosophy />
@@ -157,57 +115,7 @@ export default function Home() {
           </div>
         </section>
       </main>
-
-      <footer className="bg-stone-900 text-stone-400 py-10 md:py-12">
-        <div className="container mx-auto px-5">
-          <div className="flex flex-col items-center mb-8">
-            <div className="flex items-center gap-2.5 mb-6">
-              <SvgLogo className="h-8 w-8" variant="footer" />
-              <span className="text-sm font-medium tracking-wide text-stone-300">
-                STRONG HANDS, SOFT HEART LLC
-              </span>
-            </div>
-            <div className="flex flex-wrap justify-center gap-x-8 gap-y-4 mb-6">
-              <Link
-                href="#philosophy"
-                className="text-sm hover:text-stone-300 transition-colors py-2"
-              >
-                Philosophy
-              </Link>
-              <Link
-                href="#services"
-                className="text-sm hover:text-stone-300 transition-colors py-2"
-              >
-                Services
-              </Link>
-              <Link
-                href="#contact-form"
-                className="text-sm hover:text-stone-300 transition-colors py-2"
-              >
-                Contact
-              </Link>
-            </div>
-            <div className="text-sm text-center">
-              © {new Date().getFullYear()} Strong Hands, Soft Heart LLC. All rights reserved.
-            </div>
-          </div>
-
-          <div className="border-t border-stone-800 pt-6 md:pt-8 flex flex-wrap justify-center gap-x-8 gap-y-3 text-xs text-stone-500">
-            <Link href="/terms-of-service" className="hover:text-stone-400 transition-colors py-2">
-              Terms of Service
-            </Link>
-            <Link href="/privacy-policy" className="hover:text-stone-400 transition-colors py-2">
-              Privacy Policy
-            </Link>
-            <Link
-              href="/product-disclaimers"
-              className="hover:text-stone-400 transition-colors py-2"
-            >
-              Product Disclaimers
-            </Link>
-          </div>
-        </div>
-      </footer>
+      <Footer />
       <BackToTop />
     </div>
   );
