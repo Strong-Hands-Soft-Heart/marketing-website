@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react"
 import Link from "next/link"
-import { AlchemicalLogo } from "@/components/alchemical-logo"
+import { SvgLogo } from "@/components/svg-logo"
 import { Menu, X } from "lucide-react"
 import { cn } from "@/lib/utils"
 
@@ -37,7 +37,7 @@ export function MobileNav() {
     <>
       <div className="flex justify-between items-center w-full py-1">
         <Link href="/" className="flex items-center gap-2.5" onClick={() => setIsOpen(false)}>
-          <AlchemicalLogo className="h-8 w-8 text-stone-800" />
+          <SvgLogo className="h-8 w-8 text-stone-800" variant="header" />
           <span className="text-base font-medium tracking-wide">SHSH</span>
         </Link>
         <button
@@ -52,13 +52,13 @@ export function MobileNav() {
       {/* Mobile menu overlay with improved transitions */}
       <div
         className={cn(
-          "fixed inset-0 z-50 bg-stone-900 bg-opacity-98 flex flex-col transition-all duration-300 ease-in-out",
+          "fixed inset-0 z-[100] bg-black/80 backdrop-blur flex flex-col transition-all duration-300 ease-in-out",
           isOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none",
         )}
       >
         <div className="container mx-auto px-5 py-6 flex justify-between items-center">
           <Link href="/" className="flex items-center gap-2.5" onClick={() => setIsOpen(false)}>
-            <AlchemicalLogo className="h-8 w-8 text-stone-100" />
+            <SvgLogo className="h-8 w-8 text-stone-100" variant="footer" />
             <span className="text-base font-medium tracking-wide text-stone-100">SHSH</span>
           </Link>
           <button
@@ -71,7 +71,7 @@ export function MobileNav() {
         </div>
 
         <nav className="flex-1 flex flex-col justify-center px-5">
-          <ul className="space-y-10 text-center">
+          <ul className="space-y-10 text-center text-white">
             <li>
               <Link
                 href="/#philosophy"

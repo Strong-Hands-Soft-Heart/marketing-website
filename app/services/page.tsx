@@ -1,7 +1,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import { Beaker, Code, Headphones, BookOpen, Users, ArrowLeft } from "lucide-react"
-import { AlchemicalLogo } from "@/components/alchemical-logo"
+import { SvgLogo } from "@/components/svg-logo"
 import { MobileNav } from "@/components/mobile-nav"
 
 export default function ServicesPage() {
@@ -18,7 +18,7 @@ export default function ServicesPage() {
           <div className="hidden md:flex justify-between items-center">
             <div className="flex items-center gap-2.5">
               <Link href="/">
-                <AlchemicalLogo className="h-8 w-8 text-stone-800" />
+                <SvgLogo className="h-8 w-8 text-stone-800" variant="header" />
               </Link>
               <span className="text-base font-medium tracking-wide">SHSH</span>
             </div>
@@ -308,7 +308,7 @@ export default function ServicesPage() {
         <div className="container mx-auto px-5">
           <div className="flex flex-col items-center mb-8">
             <div className="flex items-center gap-2.5 mb-6">
-              <AlchemicalLogo className="h-8 w-8 text-stone-400" />
+              <SvgLogo className="h-8 w-8 text-stone-400" variant="header" />
               <span className="text-sm font-medium tracking-wide text-stone-300">STRONG HANDS, SOFT HEART LLC</span>
             </div>
             <div className="flex flex-wrap justify-center gap-x-8 gap-y-4 mb-6">
