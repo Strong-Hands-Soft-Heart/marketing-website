@@ -60,9 +60,9 @@ export default function Home() {
           <div
             className="absolute inset-0 z-0 bg-stone-100"
             style={{
-              backgroundImage: 'url("/textures/grain.png")',
+              backgroundImage: `url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='none'><filter id='noise'><feTurbulence type='fractalNoise' baseFrequency='1.5' numOctaves='6' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23noise)'/></svg>")`,
               backgroundBlendMode: "multiply",
-              opacity: 0.4,
+              opacity: 0.9,
             }}
           ></div>
           <div className="container mx-auto px-5 z-10">
