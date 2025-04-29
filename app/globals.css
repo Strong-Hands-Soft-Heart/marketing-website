@@ -52,6 +52,11 @@
     @apply tracking-tight;
   }
 
+  /* Section headers with increased tracking and bolder weight */
+  h2 {
+    @apply tracking-wider font-bold;
+  }
+
   /* Smooth scrolling */
   html {
     scroll-behavior: smooth;
@@ -67,10 +72,10 @@
 /* Custom spacing utilities */
 @layer utilities {
   .section-spacing {
-    @apply py-16 sm:py-20 md:py-24 lg:py-28;
+    @apply py-20 sm:py-24 md:py-28 lg:py-32;
   }
 
   .content-spacing {
-    @apply space-y-4 sm:space-y-6 md:space-y-8;
+    @apply space-y-6 sm:space-y-8 md:space-y-10;
   }
 }
