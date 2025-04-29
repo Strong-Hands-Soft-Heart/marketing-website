@@ -4,25 +4,25 @@
   "description": "Building enduring legacies through quiet strength and genuine care. Grounded in tradition, guided by compassion.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#f7f7ef",
+  "background_color": "#fafaf9",
   "theme_color": "#222222",
   "orientation": "portrait",
   "lang": "en",
   "icons": [
     {
-      "src": "/icon-192x192.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
-      "src": "/icon-512x512.png",
+      "src": "/icon-512.svg",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/svg+xml"
     },
     {
-      "src": "/icon-maskable.png",
+      "src": "/icon-512.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/icon-512.svg",
       "sizes": "196x196",
-      "type": "image/png",
+      "type": "image/svg+xml",
       "purpose": "maskable"
     }
   ]

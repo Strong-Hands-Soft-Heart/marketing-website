@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     siteName: 'Strong Hands, Soft Heart LLC',
     images: [
       {
-        url: '/og-image.png',
+        url: '/og-image.svg',
         width: 1200,
         height: 630,
         alt: 'Strong Hands, Soft Heart LLC - Traditional craftsmanship meets modern values',
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
     title: 'Strong Hands, Soft Heart LLC',
     description:
       'Building enduring legacies through quiet strength and genuine care. Grounded in tradition, guided by compassion.',
-    images: ['/twitter-image.png'],
+    images: ['/twitter-image.svg'],
     creator: '@stronghands_softheart',
   },
   robots: {
@@ -83,11 +83,9 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       { url: '/favicon.svg', type: 'image/svg+xml' },
-      { url: '/icon.png', type: 'image/png', sizes: '32x32' },
-      { url: '/icon-192.png', type: 'image/png', sizes: '192x192' },
-      { url: '/icon-512.png', type: 'image/png', sizes: '512x512' },
+      { url: '/icon-512.svg', type: 'image/svg+xml', sizes: '512x512' },
     ],
-    apple: [{ url: '/apple-icon.png', sizes: '180x180' }],
+    apple: [{ url: '/icon-512.svg', sizes: '512x512' }],
     other: [
       {
         rel: 'mask-icon',
