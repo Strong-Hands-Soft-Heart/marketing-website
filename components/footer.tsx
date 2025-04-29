@@ -13,6 +13,9 @@ export function Footer() {
             </span>
           </div>
           <div className="flex flex-wrap justify-center gap-x-8 gap-y-4 mb-6">
+            <Link href="/about" className="text-sm hover:text-stone-300 transition-colors py-2">
+              About
+            </Link>
             <Link
               href="#philosophy"
               className="text-sm hover:text-stone-300 transition-colors py-2"

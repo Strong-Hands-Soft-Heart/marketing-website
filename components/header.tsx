@@ -21,6 +21,14 @@ export function Header() {
             <ul className="flex gap-8">
               <li>
                 <Link
+                  href="/about"
+                  className="text-sm uppercase tracking-wider hover:text-stone-600 transition-colors py-2.5 px-1"
+                >
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="#philosophy"
                   className="text-sm uppercase tracking-wider hover:text-stone-600 transition-colors py-2.5 px-1"
                 >

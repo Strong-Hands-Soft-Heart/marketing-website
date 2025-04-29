@@ -1,5 +1,9 @@
 export const navigationItems = [
   {
+    href: '/about',
+    label: 'About',
+  },
+  {
     href: '#philosophy',
     label: 'Philosophy',
   },
