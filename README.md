@@ -57,7 +57,7 @@ This repository contains the website for Soft Hands, Strong Hands LLC.
 ### Prerequisites
 
 - Node.js (LTS version recommended)
-- pnpm (package manager)
+- npm (package manager)
 
 ### Installation
 
@@ -68,12 +68,12 @@ This repository contains the website for Soft Hands, Strong Hands LLC.
 
 2. Install dependencies:
    ```bash
-   pnpm install
+   npm install
    ```
 
 3. Start the development server:
    ```bash
-   pnpm dev
+   npm run dev
    ```
 
 The application will be available at `http://localhost:3000`.
@@ -82,10 +82,10 @@ The application will be available at `http://localhost:3000`.
 
 ### Available Scripts
 
-- `pnpm dev`: Start the development server
-- `pnpm build`: Build the application for production
-- `pnpm start`: Start the production server
-- `pnpm lint`: Run ESLint to check code quality
+- `npm run dev`: Start the development server
+- `npm run build`: Build the application for production
+- `npm start`: Start the production server
+- `npm run lint`: Run ESLint to check code quality
 
 ### Deployment
 
