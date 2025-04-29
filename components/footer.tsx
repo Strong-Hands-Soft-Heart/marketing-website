@@ -38,6 +38,10 @@ export function Footer() {
           <div className="text-sm text-center">
             © {new Date().getFullYear()} Strong Hands, Soft Heart LLC. All rights reserved.
           </div>
+          <small className="text-xs text-center text-stone-500 mt-2">
+            Made with strong hands and a soft heart in Puerto Rico 🇵🇷 and the U.S. 🇺🇸 — shared with
+            the world.
+          </small>
         </div>
 
         <div className="border-t border-stone-800 pt-6 md:pt-8 flex flex-wrap justify-center gap-x-8 gap-y-3 text-xs text-stone-500">
