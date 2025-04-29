@@ -82,20 +82,29 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: '/favicon.svg', type: 'image/svg+xml' },
+      { url: '/icon-192.svg', type: 'image/svg+xml', sizes: '192x192' },
       { url: '/icon-512.svg', type: 'image/svg+xml', sizes: '512x512' },
     ],
-    apple: [{ url: '/icon-512.svg', sizes: '512x512' }],
+    apple: [
+      { url: '/icon-192.svg', sizes: '192x192' },
+      { url: '/icon-512.svg', sizes: '512x512' },
+    ],
     other: [
       {
         rel: 'mask-icon',
-        url: '/favicon.svg',
+        url: '/icon-maskable.svg',
         color: '#000000',
       },
     ],
   },
   manifest: '/manifest.json',
   category: 'craftsmanship',
+  applicationName: 'Strong Hands, Soft Heart LLC',
+  appleWebApp: {
+    capable: true,
+    title: 'Strong Hands, Soft Heart LLC',
+    statusBarStyle: 'default',
+  },
 };
 
 export default function RootLayout({
