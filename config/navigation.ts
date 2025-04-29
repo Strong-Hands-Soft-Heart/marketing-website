@@ -4,15 +4,15 @@ export const navigationItems = [
     label: 'About',
   },
   {
-    href: '#philosophy',
+    href: '/#philosophy',
     label: 'Philosophy',
   },
   {
-    href: '#services',
-    label: 'Services',
+    href: '/#what-we-do',
+    label: 'What We Do',
   },
   {
-    href: '#contact-form',
+    href: '/#contact-form',
     label: 'Contact',
   },
 ] as const;

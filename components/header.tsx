@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { SvgLogo } from '@/components/svg-logo';
 import { MobileNav } from '@/components/mobile-nav';
+import { navigationItems } from '@/config/navigation';
 
 export function Header() {
   return (
@@ -21,38 +22,16 @@ export function Header() {
           </div>
           <nav>
             <ul className="flex gap-8">
-              <li>
-                <Link
-                  href="/about"
-                  className="text-sm uppercase tracking-wider hover:text-stone-600 transition-colors py-2.5 px-1"
-                >
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#philosophy"
-                  className="text-sm uppercase tracking-wider hover:text-stone-600 transition-colors py-2.5 px-1"
-                >
-                  Philosophy
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#what-we-do"
-                  className="text-sm uppercase tracking-wider hover:text-stone-600 transition-colors py-2.5 px-1"
-                >
-                  What We Do
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#contact-form"
-                  className="text-sm uppercase tracking-wider hover:text-stone-600 transition-colors py-2.5 px-1"
-                >
-                  Contact
-                </Link>
-              </li>
+              {navigationItems.map((item) => (
+                <li key={item.href}>
+                  <Link
+                    href={item.href}
+                    className="text-sm uppercase tracking-wider hover:text-stone-600 transition-colors py-2.5 px-1"
+                  >
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </nav>
         </div>
