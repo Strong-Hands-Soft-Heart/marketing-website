@@ -44,7 +44,7 @@ export function WhatWeDo() {
 
           <ServiceCard
             title="Custom Programming"
-            description="Bespoke software solutions built with both technical excellence and human understanding. Robust architecture with intuitive interfaces."
+            description="Software built with precision and principle. Combining technical excellence with intuitive design and ethical grounding."
             icon={Code}
             link={{
               url: 'https://builds.software',
