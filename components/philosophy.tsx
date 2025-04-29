@@ -26,8 +26,8 @@ export function Philosophy() {
           </div>
           <div className="relative h-64 sm:h-80 md:h-96 mt-6 md:mt-0 rounded-lg overflow-hidden shadow-md animate-slide-up animate-delay-100">
             <Image
-              src="/earthy-wood-abstract.png"
-              alt="Abstract representation of craftsmanship"
+              src="/artisanal-hands.avif"
+              alt="Artisanal hands representing craftsmanship and care"
               fill
               className="object-cover"
             />
