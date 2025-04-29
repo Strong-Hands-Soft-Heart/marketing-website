@@ -1,10 +1,10 @@
 # Soft Hands, Strong Hands LLC
 
-*Automatically synced with your [v0.dev](https://v0.dev) deployments*
+_Automatically synced with your [v0.dev](https://v0.dev) deployments_
 
 [![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/antoniwans-projects/v0-soft-hands-strong-hands-llc)
 [![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/TVPtmuEc48p)
-[![Version](https://img.shields.io/badge/Version-0.9.0-blue?style=for-the-badge)]()
+[![Version](https://img.shields.io/badge/Version-1.1.0-blue?style=for-the-badge)]()
 
 ## Overview
 
@@ -12,7 +12,22 @@ This repository contains the website for Soft Hands, Strong Hands LLC.
 
 ## Changelog
 
-### v0.9.0 (Current)
+### v1.1.0 (Current)
+
+- Implemented Formspree integration for contact form handling
+- Enhanced form submission reliability and error handling
+
+### v1.0.0
+
+- Initial stable release
+- Add missing share images
+- Final UI/UX polish
+- Performance optimizations
+- SEO improvements
+- Working contact form
+
+### v0.9.0
+
 - Initial public release
 - Implemented core website functionality
 - Added contact form with validation
@@ -22,13 +37,6 @@ This repository contains the website for Soft Hands, Strong Hands LLC.
 - Implemented proper loading states and error handling
 - Optimized dependencies and removed unused packages
 - Enhanced layout and component architecture
-
-### Upcoming v1.0.0
-- Add missing share images
-- Final UI/UX polish
-- Performance optimizations
-- SEO improvements
-- Working contact form
 
 ## Technology Stack
 
@@ -62,11 +70,13 @@ This repository contains the website for Soft Hands, Strong Hands LLC.
 ### Installation
 
 1. Clone the repository:
+
    ```bash
    git clone [repository-url]
    ```
 
 2. Install dependencies:
+
    ```bash
    npm install
    ```
