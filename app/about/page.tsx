@@ -15,12 +15,12 @@ export default function AboutPage() {
     <div className="min-h-screen bg-stone-50 text-stone-900 flex flex-col">
       <Header />
       <main className="flex-1">
-        <div className="container mx-auto px-4 py-16 max-w-3xl">
-          <h1 className="text-4xl font-bold mb-12 text-center">
+        <div className="container mx-auto px-4 py-16 max-w-3xl animate-fade-in">
+          <h1 className="text-4xl font-bold mb-12 text-center animate-slide-up">
             Who's Behind Strong Hands, Soft Heart?
           </h1>
 
-          <section className="mb-16 text-center">
+          <section className="mb-16 text-center animate-slide-up animate-delay-100">
             <h2 className="text-2xl font-semibold mb-6">Founder Statement</h2>
             <div className="prose prose-lg mx-auto text-center">
               <p className="text-xl mb-4">I'm Antonio. I build things that last.</p>
@@ -66,7 +66,7 @@ export default function AboutPage() {
             </div>
           </section>
 
-          <section className="mb-16 text-center">
+          <section className="mb-16 text-center animate-slide-up animate-delay-200">
             <h2 className="text-2xl font-semibold mb-6">What This Really Is</h2>
             <div className="space-y-4 max-w-2xl mx-auto text-center">
               <p className="text-lg">It's a workshop.</p>
@@ -80,7 +80,7 @@ export default function AboutPage() {
             </div>
           </section>
 
-          <section className="mb-16 text-center">
+          <section className="mb-16 text-center animate-slide-up animate-delay-300">
             <h2 className="text-2xl font-semibold mb-6">Our Values</h2>
             <ul className="space-y-3 list-none max-w-md mx-auto">
               <li className="flex items-center justify-center">
@@ -107,7 +107,10 @@ export default function AboutPage() {
           </section>
         </div>
 
-        <section id="contact-form" className="py-16 md:py-24 bg-stone-800 text-white">
+        <section
+          id="contact-form"
+          className="py-16 md:py-24 bg-stone-800 text-white animate-slide-up animate-delay-400"
+        >
           <div className="container mx-auto px-5 max-w-3xl">
             <ContactForm />
           </div>

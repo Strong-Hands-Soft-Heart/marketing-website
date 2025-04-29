@@ -60,16 +60,16 @@ export function LegalLayout({ children, title, lastUpdated }: LegalLayoutProps) 
         </div>
       </header>
 
-      <main className="flex-1 container mx-auto px-5 py-10 md:py-16">
+      <main className="flex-1 container mx-auto px-5 py-10 md:py-16 animate-fade-in">
         <Link
           href="/"
-          className="inline-flex items-center text-stone-700 hover:text-stone-900 mb-6 md:mb-8"
+          className="inline-flex items-center text-stone-700 hover:text-stone-900 mb-6 md:mb-8 animate-slide-up"
         >
           <ArrowLeft className="h-4 w-4 mr-2" />
           <span>Back to Home</span>
         </Link>
 
-        <div className="max-w-3xl mx-auto bg-white p-6 md:p-10 rounded-lg shadow-sm">
+        <div className="max-w-3xl mx-auto bg-white p-6 md:p-10 rounded-lg shadow-sm animate-slide-up animate-delay-100">
           <h1 className="text-3xl md:text-4xl font-bold mb-3 md:mb-4 text-stone-800">{title}</h1>
           <p className="text-sm text-stone-500 mb-8 md:mb-10">Last Updated: {lastUpdated}</p>
 

@@ -14,8 +14,10 @@ export function Header() {
         {/* Desktop navigation */}
         <div className="hidden md:flex justify-between items-center">
           <div className="flex items-center gap-2.5">
-            <SvgLogo className="h-8 w-8" variant="header" />
-            <span className="text-base font-medium tracking-wide">SHSH</span>
+            <Link href="/" className="flex items-center gap-2.5">
+              <SvgLogo className="h-8 w-8" variant="header" />
+              <span className="text-base font-medium tracking-wide">SHSH</span>
+            </Link>
           </div>
           <nav>
             <ul className="flex gap-8">
