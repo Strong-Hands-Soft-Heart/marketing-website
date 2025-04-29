@@ -84,17 +84,14 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: '/icon-192.svg', type: 'image/svg+xml', sizes: '192x192' },
+      { url: '/favicon.svg', type: 'image/svg+xml' },
       { url: '/icon-512.svg', type: 'image/svg+xml', sizes: '512x512' },
     ],
-    apple: [
-      { url: '/icon-192.svg', sizes: '192x192' },
-      { url: '/icon-512.svg', sizes: '512x512' },
-    ],
+    apple: [{ url: '/favicon.svg', sizes: '512x512' }],
     other: [
       {
         rel: 'mask-icon',
-        url: '/icon-maskable.svg',
+        url: '/favicon.svg',
         color: '#000000',
       },
     ],

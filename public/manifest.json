@@ -10,8 +10,8 @@
   "lang": "en",
   "icons": [
     {
-      "src": "/icon-192.svg",
-      "sizes": "192x192",
+      "src": "/favicon.svg",
+      "sizes": "512x512",
       "type": "image/svg+xml",
       "purpose": "any"
     },
@@ -22,7 +22,7 @@
       "purpose": "any"
     },
     {
-      "src": "/icon-maskable.svg",
+      "src": "/favicon.svg",
       "sizes": "196x196",
       "type": "image/svg+xml",
       "purpose": "maskable"
