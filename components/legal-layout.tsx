@@ -71,9 +71,11 @@ export function LegalLayout({ children, title, lastUpdated }: LegalLayoutProps) 
 
         <div className="max-w-3xl mx-auto bg-white p-6 md:p-10 rounded-lg shadow-sm">
           <h1 className="text-3xl md:text-4xl font-bold mb-3 md:mb-4 text-stone-800">{title}</h1>
-          <p className="text-sm text-stone-500 mb-6 md:mb-8">Last Updated: {lastUpdated}</p>
+          <p className="text-sm text-stone-500 mb-8 md:mb-10">Last Updated: {lastUpdated}</p>
 
-          <div className="prose prose-stone prose-sm sm:prose-base max-w-none">{children}</div>
+          <div className="prose prose-stone prose-sm sm:prose-base max-w-none [&>h2]:mt-8 [&>h2]:mb-4 [&>h2]:text-xl [&>h2]:font-semibold [&>p]:mb-4 [&>ul]:mb-4 [&>ul]:list-disc [&>ul]:pl-6 [&>li]:mb-2">
+            {children}
+          </div>
         </div>
       </main>
 
