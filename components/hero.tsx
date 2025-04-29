@@ -14,7 +14,9 @@ export function Hero() {
       <div className="container mx-auto px-5 z-10">
         <div className="max-w-2xl">
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight text-stone-800 animate-slide-up">
-            Strong Hands, Soft Heart
+            Strong Hands,
+            <br />
+            Soft Heart
           </h1>
           <p className="text-lg sm:text-xl md:text-2xl text-stone-700 max-w-xl leading-relaxed animate-slide-up animate-delay-100">
             Timeless work. Earnest care. Fierce devotion.
