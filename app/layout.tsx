@@ -53,10 +53,10 @@ export const metadata: Metadata = {
     siteName: 'Strong Hands, Soft Heart LLC',
     images: [
       {
-        url: '/og-image.svg',
+        url: '/artisanal-hands.avif',
         width: 1200,
         height: 630,
-        alt: 'Strong Hands, Soft Heart LLC - Traditional craftsmanship meets modern values',
+        alt: 'Artisanal hands crafting with care and tradition',
       },
     ],
   },
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
     title: 'Strong Hands, Soft Heart LLC',
     description:
       'Building enduring legacies through quiet strength and genuine care. Grounded in tradition, guided by compassion.',
-    images: ['/twitter-image.svg'],
+    images: ['/artisanal-hands.avif'],
     creator: '@stronghands_softheart',
   },
   robots: {
