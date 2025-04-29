@@ -32,14 +32,14 @@ export function WhatWeDo() {
             title="Artisanal Skincare"
             description="Organic, cold-process soaps — crafted by hand, rooted in tradition. Each bar is a quiet act of care and craft."
             icon={Beaker}
-            status="Soft launch: Late 2025."
+            status="Soft launch: Late 2025"
           />
 
           <ServiceCard
-            title="Heavy Metal Music"
-            description="Powerful compositions that blend technical strength with emotional depth. Our sound carries both force and feeling."
+            title="Music Production Collaborations"
+            description="Heavy, emotional, sacred. Compositions forged in fire and friendship, balancing sonic force with emotional truth."
             icon={Headphones}
-            status="In production!"
+            status="Remote production in progress"
           />
 
           <ServiceCard
