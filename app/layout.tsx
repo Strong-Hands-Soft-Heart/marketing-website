@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from 'next';
 import { ThemeProvider } from '@/components/theme-provider';
-import { StructuredData } from './components/structured-data';
-import { GoogleAnalytics } from './components/google-analytics';
+import { StructuredData } from '@/app/components/structured-data';
+import { GoogleAnalytics } from '@/app/components/google-analytics';
 import './globals.css';
 
 export const viewport: Viewport = {
