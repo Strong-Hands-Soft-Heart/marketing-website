@@ -54,11 +54,11 @@ export function WhatWeDo() {
 
           <ServiceCard
             title="Mentorship"
-            description="Guidance for young men navigating their path. Building character through wisdom shared, challenges faced, and potential realized."
+            description="For young men seeking purpose. Sacred, serious guidance rooted in accountability, strength, and compassion."
             icon={Users}
             link={{
               url: 'https://wizards777.medium.com/',
-              text: 'Read mentorship insights',
+              text: 'Read about our mentorship model',
             }}
           />
 
@@ -73,7 +73,7 @@ export function WhatWeDo() {
           />
           <ServiceCard
             title="Collaboration & Investment"
-            description="Interested in investing in our ventures, seeking mentorship, product feedback, or web development expertise? I'm open to meaningful collaborations that align with our values."
+            description="Open to partners aligned in values and vision — mentorship, feedback, software builds, or purpose-led investment."
             icon={Handshake}
             link={{
               url: '#contact-form',
