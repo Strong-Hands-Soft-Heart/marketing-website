@@ -7,6 +7,8 @@ import { ContactForm } from '@/components/contact-form';
 import { MobileNav } from '@/components/mobile-nav';
 import { BackToTop } from '@/components/back-to-top';
 import { Hero } from '@/components/hero';
+import { Philosophy } from '@/components/philosophy';
+import { Symbol } from '@/components/symbol';
 
 export default function Home() {
   return (
@@ -58,68 +60,8 @@ export default function Home() {
 
       <main className="flex-1">
         <Hero />
-
-        <section id="philosophy" className="py-16 md:py-24 bg-white relative">
-          <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-stone-200 via-stone-400 to-stone-200"></div>
-          <div className="container mx-auto px-5">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
-              <div className="content-spacing">
-                <span className="inline-block mb-2 text-xs uppercase tracking-wider text-stone-500 border-b border-stone-300 pb-1">
-                  Our Philosophy
-                </span>
-                <h2 className="text-2xl md:text-3xl font-bold text-stone-800">
-                  The Craftsman's Ethos
-                </h2>
-                <p className="text-base md:text-lg text-stone-600 leading-relaxed">
-                  Like the craftsman who shapes raw materials with calloused yet precise hands, we
-                  approach each endeavor with both strength and sensitivity.
-                </p>
-                <p className="text-base md:text-lg text-stone-600 leading-relaxed">
-                  Our work is built to endure—like mountains that stand against time, like seeds
-                  that grow slowly but with purpose and direction.
-                </p>
-                <p className="text-base md:text-lg text-stone-600 leading-relaxed">
-                  We believe in the balance of earth and air—grounded in reality while aspiring
-                  toward something greater.
-                </p>
-              </div>
-              <div className="relative h-64 sm:h-80 md:h-96 mt-6 md:mt-0 rounded-lg overflow-hidden shadow-md">
-                <Image
-                  src="/earthy-wood-abstract.png"
-                  alt="Abstract representation of craftsmanship"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="py-16 md:py-24 bg-stone-100 relative overflow-hidden">
-          <div className="absolute inset-0 opacity-10">
-            <div
-              className="absolute top-0 left-0 w-full h-full"
-              style={{
-                backgroundImage:
-                  'radial-gradient(circle at 20% 20%, rgba(0, 0, 0, 0.2) 0%, transparent 25%), radial-gradient(circle at 80% 80%, rgba(0, 0, 0, 0.2) 0%, transparent 25%)',
-                transform: 'rotate(15deg) scale(2)',
-              }}
-            ></div>
-          </div>
-          <div className="container mx-auto px-5 relative z-10">
-            <div className="bg-white py-12 px-6 md:py-16 md:px-10 rounded-lg shadow-md max-w-3xl mx-auto">
-              <SvgLogo className="h-12 w-12 md:h-16 md:w-16 mx-auto mb-6 md:mb-8" variant="site" />
-              <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6 text-center text-stone-800">
-                Our Symbol
-              </h2>
-              <p className="text-base md:text-lg text-stone-600 max-w-2xl mx-auto leading-relaxed text-center">
-                The fusion of earth and air—strength and spirit—in our mark represents our
-                fundamental belief: true power comes from balance. The geometric simplicity speaks
-                to our commitment to essentials over excess.
-              </p>
-            </div>
-          </div>
-        </section>
+        <Philosophy />
+        <Symbol />
 
         <section id="services" className="py-16 md:py-24 bg-white relative">
           <div className="absolute top-0 left-0 w-full h-full opacity-5">
