@@ -1,6 +1,6 @@
-import type { Metadata, Viewport } from 'next'
-import { ThemeProvider } from '@/components/theme-provider'
-import './globals.css'
+import type { Metadata, Viewport } from 'next';
+import { ThemeProvider } from '@/components/theme-provider';
+import './globals.css';
 
 export const viewport: Viewport = {
   width: 'device-width',
@@ -10,15 +10,25 @@ export const viewport: Viewport = {
     { media: '(prefers-color-scheme: light)', color: '#ffffff' },
     { media: '(prefers-color-scheme: dark)', color: '#000000' },
   ],
-}
+};
 
 export const metadata: Metadata = {
   title: {
     default: 'Strong Hands, Soft Heart LLC',
-    template: '%s | Strong Hands, Soft Heart'
+    template: '%s | Strong Hands, Soft Heart',
   },
-  description: 'Building enduring legacies through quiet strength and genuine care. Grounded in tradition, guided by compassion.',
-  keywords: ['artisanal craftsmanship', 'traditional methods', 'sustainable practices', 'handcrafted goods', 'quality products', 'ethical business', 'heritage skills', 'community values'],
+  description:
+    'Building enduring legacies through quiet strength and genuine care. Grounded in tradition, guided by compassion.',
+  keywords: [
+    'artisanal craftsmanship',
+    'traditional methods',
+    'sustainable practices',
+    'handcrafted goods',
+    'quality products',
+    'ethical business',
+    'heritage skills',
+    'community values',
+  ],
   authors: [{ name: 'Strong Hands, Soft Heart LLC' }],
   creator: 'Strong Hands, Soft Heart LLC',
   publisher: 'Strong Hands, Soft Heart LLC',
@@ -36,7 +46,8 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: 'https://stronghands-softheart.com',
     title: 'Strong Hands, Soft Heart LLC',
-    description: 'Building enduring legacies through quiet strength and genuine care. Grounded in tradition, guided by compassion.',
+    description:
+      'Building enduring legacies through quiet strength and genuine care. Grounded in tradition, guided by compassion.',
     siteName: 'Strong Hands, Soft Heart LLC',
     images: [
       {
@@ -50,7 +61,8 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Strong Hands, Soft Heart LLC',
-    description: 'Building enduring legacies through quiet strength and genuine care. Grounded in tradition, guided by compassion.',
+    description:
+      'Building enduring legacies through quiet strength and genuine care. Grounded in tradition, guided by compassion.',
     images: ['/twitter-image.png'],
     creator: '@stronghands_softheart',
   },
@@ -70,30 +82,28 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: '/favicon.ico' },
+      { url: '/favicon.svg', type: 'image/svg+xml' },
       { url: '/icon.png', type: 'image/png', sizes: '32x32' },
       { url: '/icon-192.png', type: 'image/png', sizes: '192x192' },
       { url: '/icon-512.png', type: 'image/png', sizes: '512x512' },
     ],
-    apple: [
-      { url: '/apple-icon.png', sizes: '180x180' },
-    ],
+    apple: [{ url: '/apple-icon.png', sizes: '180x180' }],
     other: [
       {
         rel: 'mask-icon',
-        url: '/safari-pinned-tab.svg',
+        url: '/favicon.svg',
         color: '#000000',
       },
     ],
   },
   manifest: '/manifest.json',
   category: 'craftsmanship',
-}
+};
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode
+  children: React.ReactNode;
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
@@ -108,5 +118,5 @@ export default function RootLayout({
         </ThemeProvider>
       </body>
     </html>
-  )
+  );
 }
