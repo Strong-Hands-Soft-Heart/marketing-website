@@ -4,7 +4,7 @@ _Automatically synced with your [v0.dev](https://v0.dev) deployments_
 
 [![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/antoniwans-projects/v0-strong-hands-soft-heart-llc)
 [![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/TVPtmuEc48p)
-[![Version](https://img.shields.io/badge/Version-1.2.0-blue?style=for-the-badge)]()
+[![Version](https://img.shields.io/badge/Version-1.2.1-blue?style=for-the-badge)]()
 
 ## Overview
 
@@ -12,13 +12,18 @@ This repository contains the website for Strong Hands, Soft Heart LLC, a platfor
 
 ## Changelog
 
-### v1.2.0 (Current)
+### v1.2.1 (Current)
+
+- Fixed navigation scroll behavior for hash links
+- Improved mobile menu interaction
+- Enhanced accessibility in navigation components
+
+### v1.2.0
 
 - Added dedicated logo page with detailed explanation and symbolism
 - Updated canonical URLs to use www subdomain
 - Enhanced SEO metadata and sitemap structure
 - Improved brand consistency across documentation
-- Updated legal documentation dates to April 28, 2025
 
 ### v1.1.0
 

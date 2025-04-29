@@ -1,7 +1,7 @@
-import Link from 'next/link';
 import { SvgLogo } from '@/components/svg-logo';
 import { MobileNav } from '@/components/mobile-nav';
 import { navigationItems } from '@/config/navigation';
+import { NavLink } from '@/components/nav-link';
 
 export function Header() {
   return (
@@ -15,21 +15,21 @@ export function Header() {
         {/* Desktop navigation */}
         <div className="hidden md:flex justify-between items-center">
           <div className="flex items-center gap-2.5">
-            <Link href="/" className="flex items-center gap-2.5">
+            <NavLink href="/" className="flex items-center gap-2.5">
               <SvgLogo className="h-8 w-8" variant="header" />
               <span className="text-base font-medium tracking-wide">SHSH</span>
-            </Link>
+            </NavLink>
           </div>
           <nav>
             <ul className="flex gap-8">
               {navigationItems.map((item) => (
                 <li key={item.href}>
-                  <Link
+                  <NavLink
                     href={item.href}
                     className="text-sm uppercase tracking-wider hover:text-stone-600 transition-colors py-2.5 px-1"
                   >
                     {item.label}
-                  </Link>
+                  </NavLink>
                 </li>
               ))}
             </ul>

@@ -1,11 +1,11 @@
 'use client';
 
 import { useState } from 'react';
-import Link from 'next/link';
 import { Menu, X } from 'lucide-react';
 import * as Dialog from '@radix-ui/react-dialog';
 import { SvgLogo } from '@/components/svg-logo';
 import { navigationItems } from '@/config/navigation';
+import { NavLink } from '@/components/nav-link';
 
 export function MobileNav() {
   const [open, setOpen] = useState(false);
@@ -33,10 +33,14 @@ export function MobileNav() {
             <Dialog.Title className="sr-only">Navigation Menu</Dialog.Title>
 
             <div className="container mx-auto px-5 py-6 flex justify-between items-center">
-              <Link href="/" className="flex items-center gap-2.5" onClick={() => setOpen(false)}>
+              <NavLink
+                href="/"
+                className="flex items-center gap-2.5"
+                onClick={() => setOpen(false)}
+              >
                 <SvgLogo className="h-8 w-8 text-stone-100" variant="footer" />
                 <span className="text-base font-medium tracking-wide text-stone-100">SHSH</span>
-              </Link>
+              </NavLink>
               <Dialog.Close asChild>
                 <button
                   className="p-2.5 text-stone-100 focus:outline-none focus:ring-2 focus:ring-stone-400 rounded-sm"
@@ -49,14 +53,14 @@ export function MobileNav() {
 
             <nav className="flex-1 flex flex-col items-center justify-center gap-8">
               {navigationItems.map((item) => (
-                <Link
+                <NavLink
                   key={item.href}
                   href={item.href}
                   className="text-2xl font-medium text-stone-100 hover:text-stone-300 transition-colors"
                   onClick={() => setOpen(false)}
                 >
                   {item.label}
-                </Link>
+                </NavLink>
               ))}
             </nav>
 
