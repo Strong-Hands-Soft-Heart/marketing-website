@@ -2,11 +2,11 @@ import Image from 'next/image';
 
 export function Philosophy() {
   return (
-    <section id="philosophy" className="py-16 md:py-24 bg-white relative">
+    <section id="philosophy" className="py-16 md:py-24 bg-white relative animate-fade-in">
       <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-stone-200 via-stone-400 to-stone-200"></div>
       <div className="container mx-auto px-5">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
-          <div className="content-spacing">
+          <div className="content-spacing animate-slide-up">
             <span className="inline-block mb-2 text-xs uppercase tracking-wider text-stone-500 border-b border-stone-300 pb-1">
               Our Philosophy
             </span>
@@ -24,7 +24,7 @@ export function Philosophy() {
               something greater.
             </p>
           </div>
-          <div className="relative h-64 sm:h-80 md:h-96 mt-6 md:mt-0 rounded-lg overflow-hidden shadow-md">
+          <div className="relative h-64 sm:h-80 md:h-96 mt-6 md:mt-0 rounded-lg overflow-hidden shadow-md animate-slide-up animate-delay-100">
             <Image
               src="/earthy-wood-abstract.png"
               alt="Abstract representation of craftsmanship"
