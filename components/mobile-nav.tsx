@@ -1,103 +1,73 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Link from 'next/link';
-import { SvgLogo } from '@/components/svg-logo';
 import { Menu, X } from 'lucide-react';
-import { cn } from '@/lib/utils';
+import * as Dialog from '@radix-ui/react-dialog';
+import { SvgLogo } from '@/components/svg-logo';
+import { navigationItems } from '@/config/navigation';
 
 export function MobileNav() {
-  const [isOpen, setIsOpen] = useState(false);
-
-  // Close menu when route changes or on resize
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth > 768) {
-        setIsOpen(false);
-      }
-    };
-
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
-
-  // Prevent scrolling when menu is open
-  useEffect(() => {
-    if (isOpen) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = '';
-    }
-    return () => {
-      document.body.style.overflow = '';
-    };
-  }, [isOpen]);
+  const [open, setOpen] = useState(false);
 
   return (
-    <nav className="flex items-center justify-between">
+    <div className="flex items-center justify-between w-full">
       <div className="flex items-center gap-2.5">
+        <SvgLogo className="h-8 w-8" variant="header" />
         <span className="text-base font-medium tracking-wide">SHSH</span>
       </div>
-      <div className="flex items-center">
-        <button
-          className="p-2 rounded-md hover:bg-stone-100 transition-colors"
-          aria-label="Toggle menu"
-          onClick={() => setIsOpen(true)}
-        >
-          <Menu className="w-6 h-6" />
-        </button>
-      </div>
 
-      {/* Mobile menu overlay with improved transitions */}
-      <div
-        className={cn(
-          'fixed inset-0 z-[100] bg-black/80 backdrop-blur flex flex-col transition-all duration-300 ease-in-out',
-          isOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
-        )}
-      >
-        <div className="container mx-auto px-5 py-6 flex justify-between items-center">
-          <Link href="/" className="flex items-center gap-2.5" onClick={() => setIsOpen(false)}>
-            <SvgLogo className="h-8 w-8 text-stone-100" variant="footer" />
-            <span className="text-base font-medium tracking-wide text-stone-100">SHSH</span>
-          </Link>
+      <Dialog.Root open={open} onOpenChange={setOpen}>
+        <Dialog.Trigger asChild>
           <button
-            onClick={() => setIsOpen(false)}
-            className="p-2.5 text-stone-100 focus:outline-none focus:ring-2 focus:ring-stone-400 rounded-sm"
-            aria-label="Close menu"
+            className="p-2 rounded-md hover:bg-stone-100 transition-colors"
+            aria-label="Toggle menu"
           >
-            <X className="h-6 w-6" />
+            <Menu className="w-6 h-6" />
           </button>
-        </div>
+        </Dialog.Trigger>
 
-        <nav className="flex-1 flex flex-col justify-center px-5">
-          <ul className="space-y-10 text-center text-white">
-            <li>
-              <Link
-                href="/#what-we-do"
-                className="text-2xl font-medium text-stone-100 hover:text-stone-300 transition-colors py-2.5 block"
-                onClick={() => setIsOpen(false)}
-              >
-                What We Do
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/#contact-form"
-                className="text-2xl font-medium text-stone-100 hover:text-stone-300 transition-colors py-2.5 block"
-                onClick={() => setIsOpen(false)}
-              >
-                Contact
-              </Link>
-            </li>
-          </ul>
-        </nav>
+        <Dialog.Portal>
+          <Dialog.Overlay className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50" />
+          <Dialog.Content className="fixed inset-0 z-50 flex flex-col">
+            <Dialog.Title className="sr-only">Navigation Menu</Dialog.Title>
 
-        <div className="container mx-auto px-5 py-8 text-center">
-          <p className="text-stone-400 text-sm">
-            © {new Date().getFullYear()} Strong Hands, Soft Heart LLC
-          </p>
-        </div>
-      </div>
-    </nav>
+            <div className="container mx-auto px-5 py-6 flex justify-between items-center">
+              <Link href="/" className="flex items-center gap-2.5" onClick={() => setOpen(false)}>
+                <SvgLogo className="h-8 w-8 text-stone-100" variant="footer" />
+                <span className="text-base font-medium tracking-wide text-stone-100">SHSH</span>
+              </Link>
+              <Dialog.Close asChild>
+                <button
+                  className="p-2.5 text-stone-100 focus:outline-none focus:ring-2 focus:ring-stone-400 rounded-sm"
+                  aria-label="Close menu"
+                >
+                  <X className="h-6 w-6" />
+                </button>
+              </Dialog.Close>
+            </div>
+
+            <nav className="flex-1 flex flex-col items-center justify-center gap-8">
+              {navigationItems.map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className="text-2xl font-medium text-stone-100 hover:text-stone-300 transition-colors"
+                  onClick={() => setOpen(false)}
+                >
+                  {item.label}
+                </Link>
+              ))}
+            </nav>
+
+            <div className="container mx-auto px-5 py-8 text-center">
+              <p className="text-stone-400 text-sm">
+                © {new Date().getFullYear()} Strong Hands, Soft Heart LLC
+              </p>
+            </div>
+          </Dialog.Content>
+        </Dialog.Portal>
+      </Dialog.Root>
+    </div>
   );
 }
