@@ -1,18 +1,26 @@
-# Soft Hands, Strong Hands LLC
+# Strong Hands, Soft Heart LLC
 
 _Automatically synced with your [v0.dev](https://v0.dev) deployments_
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/antoniwans-projects/v0-soft-hands-strong-hands-llc)
+[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/antoniwans-projects/v0-strong-hands-soft-heart-llc)
 [![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/TVPtmuEc48p)
-[![Version](https://img.shields.io/badge/Version-1.1.0-blue?style=for-the-badge)]()
+[![Version](https://img.shields.io/badge/Version-1.2.0-blue?style=for-the-badge)]()
 
 ## Overview
 
-This repository contains the website for Soft Hands, Strong Hands LLC.
+This repository contains the website for Strong Hands, Soft Heart LLC, a platform dedicated to building enduring legacies through quiet strength and genuine care.
 
 ## Changelog
 
-### v1.1.0 (Current)
+### v1.2.0 (Current)
+
+- Added dedicated logo page with detailed explanation and symbolism
+- Updated canonical URLs to use www subdomain
+- Enhanced SEO metadata and sitemap structure
+- Improved brand consistency across documentation
+- Updated legal documentation dates to April 28, 2025
+
+### v1.1.0
 
 - Implemented Formspree integration for contact form handling
 - Enhanced form submission reliability and error handling
@@ -99,25 +107,13 @@ The application will be available at `http://localhost:3000`.
 
 ### Deployment
 
-Your project is live at:
+The site is automatically deployed to Vercel on every push to the main branch. For manual deployment:
 
-**[https://vercel.com/antoniwans-projects/v0-soft-hands-strong-hands-llc](https://vercel.com/antoniwans-projects/v0-soft-hands-strong-hands-llc)**
-
-## How It Works
-
-1. Create and modify your project using [v0.dev](https://v0.dev)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
-
-## Contributing
-
-To contribute to this project:
-
-1. Make your changes in the v0.dev interface
-2. Deploy your changes
-3. The changes will automatically sync to this repository
+```bash
+npm run build
+npm run start
+```
 
 ## License
 
-This project is proprietary and confidential. All rights reserved.
+All rights reserved. © 2025 Strong Hands, Soft Heart LLC

@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     template: '%s | Strong Hands, Soft Heart',
   },
   description:
-    'Building enduring legacies through quiet strength and genuine care. Grounded in tradition, guided by compassion.',
+    'Building enduring legacies through quiet strength and genuine care. Grounded in tradition, guided by compassion. Explore our artisanal craftsmanship, learn about our philosophy, and discover the meaning behind our iconic logo.',
   keywords: [
     'artisanal craftsmanship',
     'traditional methods',
@@ -30,6 +30,10 @@ export const metadata: Metadata = {
     'ethical business',
     'heritage skills',
     'community values',
+    'SHSH logo',
+    'brand identity',
+    'artisanal philosophy',
+    'craftsmanship legacy',
   ],
   authors: [{ name: 'Strong Hands, Soft Heart LLC' }],
   creator: 'Strong Hands, Soft Heart LLC',
@@ -39,17 +43,17 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://stronghands-softheart.com'),
+  metadataBase: new URL('https://www.stronghandssoftheart.com'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://stronghands-softheart.com',
+    url: 'https://www.stronghandssoftheart.com',
     title: 'Strong Hands, Soft Heart LLC',
     description:
-      'Building enduring legacies through quiet strength and genuine care. Grounded in tradition, guided by compassion.',
+      'Building enduring legacies through quiet strength and genuine care. Grounded in tradition, guided by compassion. Explore our artisanal craftsmanship and discover the meaning behind our iconic logo.',
     siteName: 'Strong Hands, Soft Heart LLC',
     images: [
       {
@@ -58,14 +62,20 @@ export const metadata: Metadata = {
         height: 630,
         alt: 'Artisanal hands crafting with care and tradition',
       },
+      {
+        url: '/logo.svg',
+        width: 512,
+        height: 512,
+        alt: 'Strong Hands, Soft Heart Logo',
+      },
     ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Strong Hands, Soft Heart LLC',
     description:
-      'Building enduring legacies through quiet strength and genuine care. Grounded in tradition, guided by compassion.',
-    images: ['/artisanal-hands.avif'],
+      'Building enduring legacies through quiet strength and genuine care. Grounded in tradition, guided by compassion. Explore our artisanal craftsmanship and discover the meaning behind our iconic logo.',
+    images: ['/artisanal-hands.avif', '/logo.svg'],
     creator: '@stronghands_softheart',
   },
   robots: {
@@ -103,6 +113,10 @@ export const metadata: Metadata = {
     capable: true,
     title: 'Strong Hands, Soft Heart LLC',
     statusBarStyle: 'default',
+  },
+  other: {
+    version: '1.2.0',
+    'last-modified': '2024-04-28',
   },
 };
 

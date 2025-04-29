@@ -1,9 +1,9 @@
 {
   "name": "stronghands-softheart-website",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "private": true,
-  "description": "Official website for Soft Hands, Strong Hands LLC",
-  "author": "Soft Hands, Strong Hands LLC",
+  "description": "Official website for Strong Hands, Soft Heart LLC",
+  "author": "Strong Hands, Soft Heart LLC",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

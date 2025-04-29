@@ -1,21 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://stronghands-softheart.com/</loc>
-    <lastmod>2024-03-20</lastmod>
+    <loc>https://www.stronghandssoftheart.com/</loc>
+    <lastmod>2024-04-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://stronghands-softheart.com/about</loc>
-    <lastmod>2024-03-20</lastmod>
+    <loc>https://www.stronghandssoftheart.com/about</loc>
+    <lastmod>2024-04-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://stronghands-softheart.com/contact</loc>
-    <lastmod>2024-03-20</lastmod>
+    <loc>https://www.stronghandssoftheart.com/logo</loc>
+    <lastmod>2024-04-28</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.stronghandssoftheart.com/terms-of-service</loc>
+    <lastmod>2024-04-28</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.stronghandssoftheart.com/privacy-policy</loc>
+    <lastmod>2024-04-28</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.stronghandssoftheart.com/product-disclaimers</loc>
+    <lastmod>2024-04-28</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
   </url>
 </urlset> 
