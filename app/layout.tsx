@@ -1,5 +1,7 @@
 import type { Metadata, Viewport } from 'next';
 import { ThemeProvider } from '@/components/theme-provider';
+import { StructuredData } from './components/structured-data';
+import { GoogleAnalytics } from './components/google-analytics';
 import './globals.css';
 
 export const viewport: Viewport = {
@@ -78,7 +80,7 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: 'your-google-site-verification',
+    google: 'G-B11WKDN29L',
   },
   icons: {
     icon: [
@@ -114,6 +116,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <StructuredData />
+        <GoogleAnalytics />
+      </head>
       <body>
         <ThemeProvider
           attribute="class"
