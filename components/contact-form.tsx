@@ -6,6 +6,13 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from '@/components/ui/select';
 
 export function ContactForm() {
   const [state, handleSubmit] = useForm('mzzrdgpe');
@@ -46,6 +53,13 @@ export function ContactForm() {
 
   return (
     <div className="w-full max-w-lg mx-auto">
+      <div className="mb-8 text-center">
+        <h2 className="text-2xl md:text-3xl font-bold mb-3 text-white">Begin Your Journey</h2>
+        <p className="text-stone-300 text-lg">
+          Whether you're building something or simply curious, we'd love to hear from you. Speak
+          from the heart.
+        </p>
+      </div>
       <form onSubmit={handleSubmit} className="space-y-5">
         <div className="space-y-5">
           <div className="space-y-2">
@@ -90,13 +104,18 @@ export function ContactForm() {
           <Label htmlFor="subject" className="text-stone-300">
             Subject
           </Label>
-          <Input
-            id="subject"
-            name="subject"
-            placeholder="What is this regarding?"
-            required
-            className="bg-stone-600 border-stone-500 focus:border-stone-400 focus:ring-stone-400 text-white placeholder:text-stone-400"
-          />
+          <Select name="subject" required>
+            <SelectTrigger className="bg-stone-600 border-stone-500 focus:border-stone-400 focus:ring-stone-400 text-white">
+              <SelectValue placeholder="What is this regarding?" />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectItem value="soap">Soap Collaboration</SelectItem>
+              <SelectItem value="music">Music Licensing / Studio</SelectItem>
+              <SelectItem value="tech">Tech + Dev</SelectItem>
+              <SelectItem value="mentorship">Mentorship</SelectItem>
+              <SelectItem value="other">Other</SelectItem>
+            </SelectContent>
+          </Select>
           <ValidationError
             prefix="Subject"
             field="subject"
