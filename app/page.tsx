@@ -1,3 +1,4 @@
+import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { SvgLogo } from '@/components/svg-logo';
@@ -10,6 +11,9 @@ import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
 import { WhatWeDo } from '@/components/what-we-do';
 import { BeginJourney } from '@/components/begin-journey';
+import { pageMetadata } from './metadata';
+
+export const metadata: Metadata = pageMetadata.home;
 
 export default function Home() {
   return (

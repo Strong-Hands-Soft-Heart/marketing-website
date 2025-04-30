@@ -1,4 +1,8 @@
+import { Metadata } from 'next';
+import { pageMetadata } from '../metadata';
 import { LegalLayout } from '@/components/legal-layout';
+
+export const metadata: Metadata = pageMetadata['privacy-policy'];
 
 export default function PrivacyPolicyPage() {
   return (

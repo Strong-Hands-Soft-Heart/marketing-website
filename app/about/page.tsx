@@ -4,11 +4,9 @@ import { Footer } from '@/components/footer';
 import { BackToTop } from '@/components/back-to-top';
 import { ContactForm } from '@/components/contact-form';
 import Link from 'next/link';
+import { pageMetadata } from '../metadata';
 
-export const metadata: Metadata = {
-  title: 'About | Strong Hands, Soft Heart',
-  description: 'Learn about the story, values, and people behind Strong Hands, Soft Heart.',
-};
+export const metadata: Metadata = pageMetadata.about;
 
 export default function AboutPage() {
   return (

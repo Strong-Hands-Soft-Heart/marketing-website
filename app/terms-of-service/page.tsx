@@ -1,4 +1,8 @@
+import { Metadata } from 'next';
+import { pageMetadata } from '../metadata';
 import { LegalLayout } from '@/components/legal-layout';
+
+export const metadata: Metadata = pageMetadata['terms-of-service'];
 
 export default function TermsOfServicePage() {
   return (

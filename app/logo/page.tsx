@@ -1,12 +1,9 @@
 import { Metadata } from 'next';
 import { LegalLayout } from '@/components/legal-layout';
 import { SvgLogo } from '@/components/svg-logo';
+import { pageMetadata } from '../metadata';
 
-export const metadata: Metadata = {
-  title: 'The SH&SH Logo | Strong Hands, Soft Heart',
-  description:
-    'A deep dive into the meaning and technical aspects of the Strong Hands, Soft Heart logo.',
-};
+export const metadata: Metadata = pageMetadata.logo;
 
 export default function LogoPage() {
   return (
