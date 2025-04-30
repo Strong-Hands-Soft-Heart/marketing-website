@@ -35,7 +35,7 @@ export function Footer() {
               Contact
             </Link>
             <Link href="/logo" className="text-sm hover:text-stone-300 transition-colors py-2">
-              The SHSH Logo
+              The SH&SH Logo
             </Link>
           </div>
           <div className="text-sm text-center">

@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     'ethical business',
     'heritage skills',
     'community values',
-    'SHSH logo',
+    'SH&SH logo',
     'brand identity',
     'artisanal philosophy',
     'craftsmanship legacy',

@@ -3,36 +3,36 @@ import { LegalLayout } from '@/components/legal-layout';
 import { SvgLogo } from '@/components/svg-logo';
 
 export const metadata: Metadata = {
-  title: 'The SHSH Logo | Strong Hands, Soft Heart',
+  title: 'The SH&SH Logo | Strong Hands, Soft Heart',
   description:
     'A deep dive into the meaning and technical aspects of the Strong Hands, Soft Heart logo.',
 };
 
 export default function LogoPage() {
   return (
-    <LegalLayout title="The SHSH Logo" lastUpdated="April 28, 2025">
+    <LegalLayout title="The SH&SH Logo" lastUpdated="April 28, 2025">
       <div className="flex flex-col items-center mb-12">
         <div className="w-64 h-64 mb-8">
           <SvgLogo className="w-full h-full" variant="site" />
         </div>
         <p className="text-center text-stone-600 mb-8">
-          The Strong Hands, Soft Heart (SHSH) logo is a geometrically minimalistic yet symbolically
+          The Strong Hands, Soft Heart (SH&SH) logo is a geometrically minimalistic yet symbolically
           dense construct.
         </p>
       </div>
 
       <h2>1. Geometric Foundation and Lineage</h2>
       <p>
-        At its core, the SHSH logo is a geometrically minimalistic yet symbolically dense construct.
-        The design uses a single, continuous line (unbroken, unhesitant), integrating two ancient
-        alchemical symbols:
+        At its core, the SH&SH logo is a geometrically minimalistic yet symbolically dense
+        construct. The design uses a single, continuous line (unbroken, unhesitant), integrating two
+        ancient alchemical symbols:
       </p>
       <ul>
         <li>Earth (△ downward with a line through it)</li>
         <li>Air/Spirit (△ upward with a line through it)</li>
       </ul>
       <p>
-        Instead of rendering them separately, SHSH fuses the two into a single cohesive form,
+        Instead of rendering them separately, SH&SH fuses the two into a single cohesive form,
         implying the unity of groundedness (Earth) and transcendence (Spirit) within a single life
         principle.
       </p>
@@ -102,7 +102,7 @@ export default function LogoPage() {
       </ul>
 
       <h2>4. Systemic Scalability and Functional Design</h2>
-      <p>Beyond beauty and meaning, the SHSH logo was engineered for operational excellence:</p>
+      <p>Beyond beauty and meaning, the SH&SH logo was engineered for operational excellence:</p>
       <ul>
         <li>
           Resolution independence: The vector form is infinitely scalable without loss of fidelity
@@ -126,7 +126,7 @@ export default function LogoPage() {
 
       <h2>6. Failure Modes and Defensive Design</h2>
       <p>
-        In the spirit of good engineering, the SHSH logo is also built to resist misinterpretation:
+        In the spirit of good engineering, the SH&SH logo is also built to resist misinterpretation:
       </p>
       <ul>
         <li>It avoids explicit religious or political symbols, staying universally humanistic</li>

@@ -26,7 +26,7 @@ export function LegalLayout({ children, title, lastUpdated }: LegalLayoutProps) 
               <Link href="/">
                 <SvgLogo className="h-8 w-8 text-stone-800" variant="header" />
               </Link>
-              <span className="text-base font-medium tracking-wide">SHSH</span>
+              <span className="text-base font-medium tracking-wide">SH&SH</span>
             </div>
             <nav>
               <ul className="flex gap-8">

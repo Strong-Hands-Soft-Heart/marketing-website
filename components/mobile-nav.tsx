@@ -14,7 +14,7 @@ export function MobileNav() {
     <div className="flex items-center justify-between w-full">
       <div className="flex items-center gap-2.5">
         <SvgLogo className="h-8 w-8" variant="header" />
-        <span className="text-base font-medium tracking-wide">SHSH</span>
+        <span className="text-base font-medium tracking-wide">SH&SH</span>
       </div>
 
       <Dialog.Root open={open} onOpenChange={setOpen}>
@@ -39,7 +39,7 @@ export function MobileNav() {
                 onClick={() => setOpen(false)}
               >
                 <SvgLogo className="h-8 w-8 text-stone-100" variant="footer" />
-                <span className="text-base font-medium tracking-wide text-stone-100">SHSH</span>
+                <span className="text-base font-medium tracking-wide text-stone-100">SH&SH</span>
               </NavLink>
               <Dialog.Close asChild>
                 <button

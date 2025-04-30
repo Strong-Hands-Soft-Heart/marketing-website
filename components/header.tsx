@@ -17,7 +17,7 @@ export function Header() {
           <div className="flex items-center gap-2.5">
             <NavLink href="/" className="flex items-center gap-2.5">
               <SvgLogo className="h-8 w-8" variant="header" />
-              <span className="text-base font-medium tracking-wide">SHSH</span>
+              <span className="text-base font-medium tracking-wide">SH&SH</span>
             </NavLink>
           </div>
           <nav>
