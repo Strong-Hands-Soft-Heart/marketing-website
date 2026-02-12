@@ -121,4 +121,4 @@ npm run start
 
 ## License
 
-All rights reserved. © 2025 Strong Hands, Soft Heart LLC
+All rights reserved. © 2026 Strong Hands, Soft Heart LLC

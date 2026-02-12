@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { SvgLogo } from '@/components/svg-logo';
+import { CONSULTING_URL } from '@/config/navigation';
 
 export function Footer() {
   return (
@@ -13,6 +14,14 @@ export function Footer() {
             </span>
           </div>
           <div className="flex flex-wrap justify-center gap-x-8 gap-y-4 mb-6">
+            <Link
+              href={CONSULTING_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm hover:text-stone-300 transition-colors py-2"
+            >
+              Consulting
+            </Link>
             <Link href="/about" className="text-sm hover:text-stone-300 transition-colors py-2">
               About
             </Link>

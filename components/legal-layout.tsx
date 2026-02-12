@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { SvgLogo } from '@/components/svg-logo';
 import { ArrowLeft } from 'lucide-react';
 import { MobileNav } from '@/components/mobile-nav';
+import { CONSULTING_URL } from '@/config/navigation';
 
 interface LegalLayoutProps {
   children: React.ReactNode;
@@ -13,7 +14,21 @@ interface LegalLayoutProps {
 export function LegalLayout({ children, title, lastUpdated }: LegalLayoutProps) {
   return (
     <div className="min-h-screen bg-stone-50 text-stone-900 flex flex-col">
-      <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-sm border-b border-stone-200 shadow-sm">
+      <div className="sticky top-0 z-50 bg-stone-800 text-white py-2 text-center">
+        <Link
+          href={CONSULTING_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-sm font-medium tracking-wide hover:text-stone-200 transition-colors inline-flex items-center gap-2 justify-center"
+        >
+          Open for consulting
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M7 7h10v10" />
+            <path d="M7 17 17 7" />
+          </svg>
+        </Link>
+      </div>
+      <header className="sticky top-[40px] z-40 bg-white/95 backdrop-blur-sm border-b border-stone-200 shadow-sm">
         <div className="container mx-auto py-3 px-5">
           {/* Mobile navigation */}
           <div className="md:hidden">

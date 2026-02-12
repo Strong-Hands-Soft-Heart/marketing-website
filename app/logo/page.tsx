@@ -7,7 +7,7 @@ export const metadata: Metadata = pageMetadata.logo;
 
 export default function LogoPage() {
   return (
-    <LegalLayout title="The SH&SH Logo" lastUpdated="April 28, 2025">
+    <LegalLayout title="The SH&SH Logo" lastUpdated="April 28, 2026">
       <div className="flex flex-col items-center mb-12">
         <div className="w-64 h-64 mb-8">
           <SvgLogo className="w-full h-full" variant="site" />

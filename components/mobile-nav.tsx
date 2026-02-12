@@ -52,16 +52,29 @@ export function MobileNav() {
             </div>
 
             <nav className="flex-1 flex flex-col items-center justify-center gap-8">
-              {navigationItems.map((item) => (
-                <NavLink
-                  key={item.href}
-                  href={item.href}
-                  className="text-2xl font-medium text-stone-100 hover:text-stone-300 transition-colors"
-                  onClick={() => setOpen(false)}
-                >
-                  {item.label}
-                </NavLink>
-              ))}
+              {navigationItems.map((item) =>
+                item.external ? (
+                  <a
+                    key={item.href}
+                    href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-2xl font-medium text-stone-100 hover:text-stone-300 transition-colors"
+                    onClick={() => setOpen(false)}
+                  >
+                    {item.label}
+                  </a>
+                ) : (
+                  <NavLink
+                    key={item.href}
+                    href={item.href}
+                    className="text-2xl font-medium text-stone-100 hover:text-stone-300 transition-colors"
+                    onClick={() => setOpen(false)}
+                  >
+                    {item.label}
+                  </NavLink>
+                )
+              )}
             </nav>
 
             <div className="container mx-auto px-5 py-8 text-center">

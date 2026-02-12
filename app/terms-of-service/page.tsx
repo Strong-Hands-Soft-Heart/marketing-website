@@ -6,7 +6,7 @@ export const metadata: Metadata = pageMetadata['terms-of-service'];
 
 export default function TermsOfServicePage() {
   return (
-    <LegalLayout title="Terms of Service" lastUpdated="April 28, 2025">
+    <LegalLayout title="Terms of Service" lastUpdated="April 28, 2026">
       <p>
         Welcome to Strong Hands, Soft Heart LLC. Please read these Terms of Service ("Terms")
         carefully. By using our website or services, you agree to be bound by them. If you do not

@@ -14,7 +14,7 @@ interface ServiceCardProps {
 
 export function ServiceCard({ title, description, icon: Icon, status, link }: ServiceCardProps) {
   return (
-    <div className="bg-white rounded-md border border-stone-200 shadow-sm transition-all hover:border-stone-300 hover:shadow-md overflow-hidden">
+    <div className="bg-white rounded-md border border-stone-200 shadow-sm transition-all duration-200 hover:border-stone-300 hover:shadow-md overflow-hidden">
       <div className="p-6 space-y-5">
         <div className="flex items-start justify-between gap-3">
           <div className="p-2.5 bg-stone-100 rounded-md inline-flex items-center justify-center">

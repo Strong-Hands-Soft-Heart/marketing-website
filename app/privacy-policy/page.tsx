@@ -6,7 +6,7 @@ export const metadata: Metadata = pageMetadata['privacy-policy'];
 
 export default function PrivacyPolicyPage() {
   return (
-    <LegalLayout title="Privacy Policy" lastUpdated="April 28, 2025">
+    <LegalLayout title="Privacy Policy" lastUpdated="April 28, 2026">
       <p>
         Strong Hands, Soft Heart LLC ("we," "our," or "us") is committed to protecting your privacy.
         This policy explains how we collect, use, and safeguard your personal information when you

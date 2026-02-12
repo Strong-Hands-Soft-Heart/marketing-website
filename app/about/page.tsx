@@ -4,6 +4,7 @@ import { Footer } from '@/components/footer';
 import { BackToTop } from '@/components/back-to-top';
 import { ContactForm } from '@/components/contact-form';
 import Link from 'next/link';
+import { CONSULTING_URL } from '@/config/navigation';
 import { pageMetadata } from '../metadata';
 
 export const metadata: Metadata = pageMetadata.about;
@@ -55,10 +56,12 @@ export default function AboutPage() {
                 </div>
 
                 <Link
-                  href="#contact-form"
+                  href={CONSULTING_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-block px-6 py-3 bg-stone-900 text-white rounded-md hover:bg-stone-800 transition-colors"
                 >
-                  Join Us
+                  AI & Engineering Consulting
                 </Link>
               </div>
             </div>

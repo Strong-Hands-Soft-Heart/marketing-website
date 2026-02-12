@@ -12,8 +12,8 @@ export function Philosophy() {
             </span>
             <h2 className="text-2xl md:text-3xl font-bold text-stone-800">The Craftsman's Ethos</h2>
             <p className="text-base md:text-lg text-stone-600 leading-relaxed">
-              Like a craftsman shaping raw materials with calloused yet precise hands, we approach
-              each endeavor with both strength and sensitivity.
+              Like a craftsman shaping raw materials with precise hands, we approach each endeavor
+              with strength and sensitivity.
             </p>
             <p className="text-base md:text-lg text-stone-600 leading-relaxed">
               Our work is built to endure — like mountains that weather time or seeds that grow with

@@ -22,8 +22,6 @@ export function WhatWeDo() {
           </span>
           <h2 className="text-2xl md:text-3xl font-bold mb-3 text-stone-800">Our Crafts</h2>
           <p className="text-base md:text-lg text-stone-600 max-w-2xl mx-auto">
-            Diverse expressions. One philosophy.
-            <br />
             Strength in execution. Care in approach.
           </p>
         </div>
@@ -32,16 +30,16 @@ export function WhatWeDo() {
           <div className="animate-slide-up animate-delay-100">
             <ServiceCard
               title="Artisanal Skincare"
-              description="Organic, cold-process soaps — crafted by hand, rooted in tradition. Each bar is a quiet act of care and craft."
+              description="Organic, cold-process soaps crafted by hand and rooted in tradition. Each bar is a quiet act of care and craft."
               icon={Beaker}
-              status="Soft launch: Late 2025"
+              status="Soft launch: Late 2026"
             />
           </div>
 
           <div className="animate-slide-up animate-delay-200">
             <ServiceCard
               title="Music Production Collaborations"
-              description="Heavy, emotional, sacred. Compositions forged in fire and friendship, balancing sonic force with emotional truth."
+              description="Heavy, emotional compositions forged in fire and friendship — balancing sonic force with emotional truth."
               icon={Headphones}
               status="Remote production in progress"
             />
@@ -50,7 +48,7 @@ export function WhatWeDo() {
           <div className="animate-slide-up animate-delay-300">
             <ServiceCard
               title="Custom Programming"
-              description="Software built with precision and principle. Combining technical excellence with intuitive design and ethical grounding."
+              description="Software built with precision and principle — technical excellence, intuitive design, and ethical grounding."
               icon={Code}
               link={{
                 url: 'https://builds.software',
@@ -61,7 +59,7 @@ export function WhatWeDo() {
 
           <ServiceCard
             title="Mentorship"
-            description="For young men seeking purpose. Sacred, serious guidance rooted in accountability, strength, and compassion."
+            description="For those seeking purpose. Guidance rooted in accountability, strength, and compassion."
             icon={Users}
             link={{
               url: 'https://wizards777.medium.com/',
@@ -71,7 +69,7 @@ export function WhatWeDo() {
 
           <ServiceCard
             title="Educational Content"
-            description="Real knowledge. Clear words. Non-profit, rigorously crafted content to illuminate complex ideas — with both depth and accessibility."
+            description="Real knowledge, clear words. Rigorously crafted content that illuminates complex ideas with depth and accessibility."
             icon={BookOpen}
             link={{
               url: 'https://wizards777.medium.com/',

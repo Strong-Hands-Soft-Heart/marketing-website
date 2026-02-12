@@ -6,7 +6,7 @@ export const metadata: Metadata = pageMetadata['product-disclaimers'];
 
 export default function ProductDisclaimersPage() {
   return (
-    <LegalLayout title="Product Disclaimer" lastUpdated="April 28, 2025">
+    <LegalLayout title="Product Disclaimer" lastUpdated="April 28, 2026">
       <p>
         Strong Hands, Soft Heart LLC ("we," "our," or "us") creates handcrafted artisanal skincare
         products, including soaps, balms, and related natural goods. By purchasing, using, or

@@ -54,10 +54,9 @@ export function ContactForm() {
   return (
     <div className="w-full max-w-lg mx-auto">
       <div className="mb-8 text-center">
-        <h2 className="text-2xl md:text-3xl font-bold mb-3 text-white">Begin Your Journey</h2>
+        <h2 className="text-2xl md:text-3xl font-bold mb-3 text-white">Get in Touch</h2>
         <p className="text-stone-300 text-lg">
-          Whether you're building something or simply curious, we'd love to hear from you. Speak
-          from the heart.
+          Building something or curious? We'd love to hear from you.
         </p>
       </div>
       <form onSubmit={handleSubmit} className="space-y-5">

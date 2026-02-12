@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { CONSULTING_URL } from '@/config/navigation';
 
 export function Hero() {
   return (
@@ -24,12 +25,20 @@ export function Hero() {
             We build enduring legacies — grounded in truth, shaped by strength, and carried with
             compassion.
           </p>
-          <div className="mt-10 animate-slide-up animate-delay-200">
+          <div className="mt-10 flex flex-wrap gap-4 animate-slide-up animate-delay-200">
+            <Link
+              href={CONSULTING_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-stone-800 text-white px-6 py-3 font-medium tracking-wide hover:bg-stone-700 transition-colors duration-200 rounded-md"
+            >
+              AI & Engineering Consulting
+            </Link>
             <Link
               href="#philosophy"
-              className="inline-block border-2 border-stone-800 px-6 py-3 text-stone-800 font-medium tracking-wide hover:bg-stone-800 hover:text-white transition-colors rounded-md"
+              className="inline-block border-2 border-stone-800 px-6 py-3 text-stone-800 font-medium tracking-wide hover:bg-stone-800 hover:text-white transition-colors duration-200 rounded-md"
             >
-              Discover the Philosophy
+              Our Philosophy
             </Link>
           </div>
         </div>

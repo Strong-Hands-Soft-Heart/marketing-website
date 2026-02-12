@@ -59,7 +59,7 @@ export const metadata: Metadata = {
   },
   other: {
     version: '1.2.0',
-    'last-modified': '2024-04-28',
+    'last-modified': '2026-02-12',
   },
 };
 
