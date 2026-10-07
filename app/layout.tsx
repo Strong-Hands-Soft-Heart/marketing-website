@@ -71,6 +71,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        <link rel="describedby" href="/llms.txt" />
         <StructuredData />
         <GoogleAnalytics />
       </head>
