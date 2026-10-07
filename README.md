@@ -1,5 +1,8 @@
 # Strong Hands, Soft Heart LLC
 
+> **Retired October 7, 2026.** Replaced by [Strong-Hands-Soft-Heart/stronghandssoftheart.com](https://github.com/Strong-Hands-Soft-Heart/stronghandssoftheart.com), an Astro site built from the SH&SH design system.
+
+
 _Automatically synced with your [v0.dev](https://v0.dev) deployments_
 
 [![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/antoniwans-projects/v0-strong-hands-soft-heart-llc)
